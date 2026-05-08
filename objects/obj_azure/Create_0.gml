@@ -145,29 +145,30 @@ scr_state_dash = function()
 }
 
 scr_state_swim = function()
-	{
-		var _ins = instance_place( x, y, obj_swim) 
-		var _at_surface = false;
-		//If character goes on water
-		if instance_exists(_ins)
-		{
-			var _yy = _ins.y+sprite_height/2
-			if (y > _yy){y = _yy};
-		}
-		//If he jumps out of water
-		if y+yspd <= _ins.y
-		{
-			yspd -= grav*2;
-			if y+yspd <= _ins.y
-			{
-				y = _ins.y;
-				yspd = 0;
-				_at_surface = true;
-			}
-		}
-		//movement
-		x += xspd
-		scr_movement(!_at_surface)
-	}
+{
+    //The variables setup
+    var _ins = instance_place( x, y, obj_swim)
+    var _at_surface = false;
+    //If there's water nearby
+    if instance_exists(_ins)
+    {
+        var _yy = _ins.y+sprite_height/2
+        if (y > _yy){y = _yy};
+
+        //If you go to water
+        if y+yspd <= _ins.y
+        {
+            yspd -= grav*2;
+            //If you jump out the water
+            if y+yspd <= _ins.y
+            {
+                y = _ins.y;
+                yspd = 0;
+                _at_surface = true;
+            }
+        }
+    }
+    scr_movement(!_at_surface)
+}
 
 state = scr_state_idle;

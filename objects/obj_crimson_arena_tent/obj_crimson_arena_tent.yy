@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_crimson_arena_tent_wall",
-    "path":"sprites/spr_crimson_arena_tent_wall/spr_crimson_arena_tent_wall.yy",
+    "name":"spr_crimson_arena_tent_front",
+    "path":"sprites/spr_crimson_arena_tent_front/spr_crimson_arena_tent_front.yy",
   },
   "spriteMaskId":null,
   "visible":true,
