@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"Coner",
   "bboxMode":0,
-  "bbox_bottom":56,
-  "bbox_left":2,
-  "bbox_right":45,
+  "bbox_bottom":31,
+  "bbox_left":0,
+  "bbox_right":20,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"24bd2116-b095-45fc-8785-9926245f7000","name":"24bd2116-b095-45fc-8785-9926245f7000","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"20d069d2-1eef-4b1d-ad59-fbfd1a3b9b8d","name":"20d069d2-1eef-4b1d-ad59-fbfd1a3b9b8d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":20,
   "gridY":9,
-  "height":60,
+  "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"41f5bebc-64fa-4b51-8117-a65be082ad90","blendMode":0,"displayName":"default","isLocked":false,"name":"41f5bebc-64fa-4b51-8117-a65be082ad90","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f6872b3e-1380-4fb5-828e-a656a53d702e","blendMode":0,"displayName":"default","isLocked":false,"name":"f6872b3e-1380-4fb5-828e-a656a53d702e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Coner",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24bd2116-b095-45fc-8785-9926245f7000","path":"sprites/Coner/Coner.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3a677066-d60e-42f9-b210-fc50cd455a47","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"20d069d2-1eef-4b1d-ad59-fbfd1a3b9b8d","path":"sprites/Coner/Coner.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d6445e9c-1d22-4d36-855b-573577a1af0b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":48,
+  "width":21,
 }
