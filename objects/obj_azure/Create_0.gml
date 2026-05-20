@@ -100,7 +100,9 @@ if on_ground
         sprite_index = idle_spr}
     //Dash
     else if abs(xspd) >= move_spd[1] 
-        {if sprite_index != run_spr
+        {
+			
+			if sprite_index != run_spr
             {image_index = 0}
         sprite_index = run_spr;}
     //Walk
