@@ -41,7 +41,14 @@ dash_time = 10;
 fast_step = true;
 double_jump = true;
 
+if instance_exists(obj_transition)
+{
+	xspd = 0;
+	yspd = 0;
+}
+
 scr_state_idle = function(){
+	
     move_dir = right_key - left_key;
 
     if move_dir != 0 {face = move_dir};
