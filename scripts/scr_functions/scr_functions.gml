@@ -44,5 +44,4 @@ function scr_get_control()
 	{
 		jump_key_buffered = 0;
 	}
-		
 }

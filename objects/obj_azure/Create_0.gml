@@ -1,3 +1,4 @@
+test_text = 0;
 scr_contol_setup()
 
 mask_spr = spr_azure;
@@ -14,8 +15,8 @@ face = 1;
 
 run_type = 0;
 move_dir = 0;
-move_spd[0] = 2;
-move_spd[1] = 4;
+move_spd[0] = 1.5
+move_spd[1] = 2.5;
 xspd = 0;
 yspd = 0;
 
@@ -29,9 +30,9 @@ jump_count = 0;
 jump_hold_timer = 0;
 jump_hold_frames[0] = 16;
 
-jspd[0] = -3.15;
+jspd[0] = -(3.15)*2; //Double the jump
 jump_hold_frames[1] = 12;
-jspd[1] = -4.85;
+jspd[1] = -(4.85)*2; //This too
 
 can_dash = true;
 dash_distance = 40;
@@ -49,7 +50,7 @@ scr_state_idle = function(){
     
  if (move_dir != 0){
         xspd = move_dir * move_spd[run_type];
-    } else if (on_ground == true){
+    } else /* if (on_ground == true)*/{
         xspd *= .98;
        if (xspd < 0.05) or (xspd > 0.05) xspd = 0;
     }
@@ -98,13 +99,26 @@ if on_ground
         {if sprite_index != idle_spr
             {image_index = 0}
         sprite_index = idle_spr}
-    //Dash
+    //Run & Dash
     else if abs(xspd) >= move_spd[1] 
         {
+<<<<<<< Updated upstream
 			
 			if sprite_index != run_spr
+=======
+			//Dash
+			if (dash_energy > 0){
+			if sprite_index != dash_air_spr
+>>>>>>> Stashed changes
             {image_index = 0}
-        sprite_index = run_spr;}
+			sprite_index = dash_air_spr;
+			}//Run
+			else{
+			if sprite_index != run_spr
+            {image_index = 0}
+			sprite_index = run_spr;
+			}
+		}
     //Walk
     else 
         {if sprite_index != walk_spr
