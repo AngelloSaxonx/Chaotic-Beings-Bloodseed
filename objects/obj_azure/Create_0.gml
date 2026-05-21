@@ -15,8 +15,8 @@ face = 1;
 
 run_type = 0;
 move_dir = 0;
-move_spd[0] = 1.5
-move_spd[1] = 2.5;
+move_spd[0] = 2
+move_spd[1] = 3;
 xspd = 0;
 yspd = 0;
 
@@ -30,9 +30,9 @@ jump_count = 0;
 jump_hold_timer = 0;
 jump_hold_frames[0] = 16;
 
-jspd[0] = -(3.15)*2; //Double the jump
+jspd[0] = -(3)*2; //Double the jump
 jump_hold_frames[1] = 12;
-jspd[1] = -(4.85)*2; //This too
+jspd[1] = -(5)*2; //This too
 
 can_dash = true;
 dash_distance = 40;
@@ -102,14 +102,14 @@ if on_ground
     //Run & Dash
     else if abs(xspd) >= move_spd[1] 
         {
-<<<<<<< Updated upstream
+//// Updated upstream
 			
 			if sprite_index != run_spr
-=======
+
 			//Dash
 			if (dash_energy > 0){
 			if sprite_index != dash_air_spr
->>>>>>> Stashed changes
+//// Stashed changes
             {image_index = 0}
 			sprite_index = dash_air_spr;
 			}//Run
