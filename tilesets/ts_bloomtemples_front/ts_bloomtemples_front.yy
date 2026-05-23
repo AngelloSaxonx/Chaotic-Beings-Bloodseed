@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_bloomtemple_front",
-    "path":"sprites/spr_bloomtemple_front/spr_bloomtemple_front.yy",
+    "name":"spr_dungeon_front",
+    "path":"sprites/spr_dungeon_front/spr_dungeon_front.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

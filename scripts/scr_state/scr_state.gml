@@ -2,7 +2,7 @@ function scr_state_jump(){
     if double_jump = false{jump_max = 1;}
     else {jump_max = 2;}
 
-    if (on_ground || on_water)
+    if on_ground
     {
         jump_count = 0;
         jump_hold_timer = 0;
@@ -12,10 +12,6 @@ function scr_state_jump(){
         if jump_count == 0{jump_count = 1;}
     }
     // Jump
-	// Checking the "can_jump" variable.
-	if (jump_count >= jump_max){can_jump = false}
-	else{can_jump = true}
-	
     if jump_key_buffered && jump_count < jump_max
     {
         jump_key_buffered = false;
@@ -83,7 +79,7 @@ function scr_movement(_use_grav = true, _use_term_vel = true){
         yspd = 0;
     }
 
-    on_ground = (yspd >= 0 && place_meeting( x, y+1, obj_collision))
+    on_ground = yspd >= 0 && place_meeting( x, y+1, obj_collision)
 
     y += yspd;
 	
