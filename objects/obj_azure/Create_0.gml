@@ -25,6 +25,7 @@ term_vel = 4;
 on_ground = true;
 on_water = false;
 
+can_jump = true // in case
 jump_max = 2;
 jump_count = 0;
 jump_hold_timer = 0;
@@ -102,14 +103,14 @@ if on_ground
     //Run & Dash
     else if abs(xspd) >= move_spd[1] 
         {
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 			
 			if sprite_index != run_spr
-=======
+//=======
 			//Dash
 			if (dash_energy > 0){
 			if sprite_index != dash_air_spr
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
             {image_index = 0}
 			sprite_index = dash_air_spr;
 			}//Run
@@ -126,7 +127,7 @@ if on_ground
         sprite_index = walk_spr};
     }
 //Jump
-else
+else //if (!on_ground) || (jump_key)
     {    
     //Airdash
     if abs(xspd) >= move_spd[1] 
@@ -140,9 +141,19 @@ else
 		sprite_index = dash_down_spr;}
 	//Jump
     else if sprite_index != dash_air_spr || sprite_index != dash_down_spr
-        {if sprite_index != jump_spr
-            {image_index = 0}
-        sprite_index = jump_spr}
+        {
+			if sprite_index != jump_spr
+            {
+				if (jump_key) {image_index = 0} // if you press jump
+				else {image_index = 1} // Otherwise act like falling
+			}
+			else
+			{
+				if (jump_key_pressed && can_jump) {image_index = 0} //Double jumping refresh animation
+			}
+			sprite_index = jump_spr
+		
+		}
 }
 
 };
@@ -162,13 +173,27 @@ scr_state_dash = function()
 
 scr_state_swim = function()
 {
+	//X
+	move_dir = right_key - left_key;
+
+    if move_dir != 0 {face = move_dir};
+
+    run_type = run_key;
+    
+	if (move_dir != 0){
+        xspd = move_dir * move_spd[run_type] / 1.5; // because you're on water
+    } else {
+        xspd *= .98;
+       if (xspd < 0.05) or (xspd > 0.05) xspd = 0;
+    }
+	
     //The variables setup
     var _ins = instance_place( x, y, obj_swim)
     var _at_surface = false;
     //If there's water nearby
     if instance_exists(_ins)
     {
-        var _yy = _ins.y+sprite_height/2
+        var _yy = _ins.bbox_top+8 //_ins.y+sprite_height/2
         if (y > _yy){y = _yy};
 
         //If you go to water
@@ -181,9 +206,17 @@ scr_state_swim = function()
                 y = _ins.y;
                 yspd = 0;
                 _at_surface = true;
+				if (on_water = false) // reseting state
+				{
+					state = scr_state_idle
+				}
             }
         }
     }
+	//Y
+	if (jump_key_pressed && can_jump) {sprite_index = jump_spr; image_index = 0;} //Double jumping refresh animation
+	scr_state_jump()
+	//Movement
     scr_movement(!_at_surface)
 }
 
