@@ -70,7 +70,7 @@
           11,1,14,17,-22,-2147483648,10,7,10,18,0,0,18,18,4,14,17,-22,-2147483648,2,14,17,-6,-2147483648,2,14,
           17,-22,-2147483648,2,14,17,-6,-2147483648,2,14,17,-22,-2147483648,2,14,17,-6,-2147483648,2,14,17,-22,
           -2147483648,2,14,17,-6,-2147483648,2,14,17,-22,-2147483648,2,14,17,-6,-2147483648,2,14,17,-4,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_bloomtemples_front","path":"tilesets/ts_bloomtemples_front/ts_bloomtemples_front.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_dungeon_front","path":"tilesets/ts_dungeon_front/ts_dungeon_front.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":32,"TileCompressedData":[
           -54,-2147483648,1,6,-8,7,-55,-2147483648,1,0,-95,-2147483648,1,15,-8,16,-42,-2147483648,1,0,-325,-2147483648,
           3,15,16,16,-174,-2147483648,

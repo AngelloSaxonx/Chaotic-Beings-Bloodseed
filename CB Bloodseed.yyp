@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"AB Bloodseed",
+  "%Name":"CB Bloodseed",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -80,7 +80,7 @@
   "MetaData":{
     "IDEVersion":"2024.14.4.222",
   },
-  "name":"AB Bloodseed",
+  "name":"CB Bloodseed",
   "resources":[
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"Note2","path":"notes/Note2/Note2.yy",},},
@@ -102,11 +102,6 @@
     {"id":{"name":"rm_crimson","path":"rooms/rm_crimson/rm_crimson.yy",},},
     {"id":{"name":"scr_functions","path":"scripts/scr_functions/scr_functions.yy",},},
     {"id":{"name":"scr_state","path":"scripts/scr_state/scr_state.yy",},},
-    {"id":{"name":"Chaptah","path":"sprites/Chaptah/Chaptah.yy",},},
-    {"id":{"name":"Coner_1","path":"sprites/Coner_1/Coner_1.yy",},},
-    {"id":{"name":"Coner","path":"sprites/Coner/Coner.yy",},},
-    {"id":{"name":"Detective_Conan","path":"sprites/Detective_Conan/Detective_Conan.yy",},},
-    {"id":{"name":"mansion","path":"sprites/mansion/mansion.yy",},},
     {"id":{"name":"palette","path":"sprites/palette/palette.yy",},},
     {"id":{"name":"Queen_bonus","path":"sprites/Queen_bonus/Queen_bonus.yy",},},
     {"id":{"name":"spr_ab_font","path":"sprites/spr_ab_font/spr_ab_font.yy",},},
@@ -146,11 +141,10 @@
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},},
     {"id":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},},
     {"id":{"name":"spr_warp","path":"sprites/spr_warp/spr_warp.yy",},},
-    {"id":{"name":"Sprite45","path":"sprites/Sprite45/Sprite45.yy",},},
     {"id":{"name":"TileSet4","path":"tilesets/TileSet4/TileSet4.yy",},},
-    {"id":{"name":"ts_bloomtemples_front","path":"tilesets/ts_bloomtemples_front/ts_bloomtemples_front.yy",},},
     {"id":{"name":"ts_crimson_garden_back","path":"tilesets/ts_crimson_garden_back/ts_crimson_garden_back.yy",},},
     {"id":{"name":"ts_crimson_garden_front","path":"tilesets/ts_crimson_garden_front/ts_crimson_garden_front.yy",},},
+    {"id":{"name":"ts_dungeon_front","path":"tilesets/ts_dungeon_front/ts_dungeon_front.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
