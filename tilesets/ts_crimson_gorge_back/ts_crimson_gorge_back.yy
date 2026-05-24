@@ -1,13 +1,13 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"ts_crimson_garden_back",
+  "%Name":"ts_crimson_gorge_back",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"ts_crimson_garden_back",
+  "name":"ts_crimson_gorge_back",
   "out_columns":7,
   "out_tilehborder":2,
   "out_tilevborder":2,
@@ -34,5 +34,5 @@
   "tileWidth":20,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":50,
+  "tile_count":54,
 }
