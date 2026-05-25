@@ -1,8 +1,9 @@
 function scr_state_jump(){
     if double_jump = false{jump_max = 1;}
     else {jump_max = 2;}
-
-    if on_ground
+	if (jump_count < jump_max) {can_jump = true} else {can_jump = false}
+	
+    if (on_ground || on_water)
     {
         jump_count = 0;
         jump_hold_timer = 0;
@@ -52,8 +53,10 @@ function scr_movement(_use_grav = true, _use_term_vel = true){
             xspd = 0;
         }
     }
-
+	if (!in_transition)
+	{
     x += xspd;
+	}
 
     // Y move
 
@@ -80,8 +83,11 @@ function scr_movement(_use_grav = true, _use_term_vel = true){
     }
 
     on_ground = yspd >= 0 && place_meeting( x, y+1, obj_collision)
-
+	
+	if (!in_transition)
+	{
     y += yspd;
+	}
 	
 	on_water = place_meeting(x + xspd, y, obj_swim);
 	on_water = place_meeting(x, y + yspd, obj_swim);

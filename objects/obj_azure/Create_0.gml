@@ -23,7 +23,8 @@ yspd = 0;
 grav = .275;
 term_vel = 4;
 on_ground = true;
-on_water = false;
+on_water = false
+in_transition = false
 
 can_jump = true // in case
 jump_max = 2;
@@ -42,7 +43,8 @@ dash_time = 10;
 fast_step = true;
 double_jump = true;
 
-scr_state_idle = function(){
+scr_state_idle = function()
+{
     move_dir = right_key - left_key;
 
     if move_dir != 0 {face = move_dir};
@@ -96,54 +98,56 @@ scr_state_idle = function(){
 
 if on_ground
     //Idle
-    {if abs(xspd) == 0 
-        {if sprite_index != idle_spr
-            {image_index = 0}
-        sprite_index = idle_spr}
-    //Run & Dash
-    else if abs(xspd) >= move_spd[1] 
-        {
+{image_speed = 1
+	if abs(xspd) == 0 
+    {if sprite_index != idle_spr
+        {image_index = 0}
+    sprite_index = idle_spr}
+//Run & Dash
+else if abs(xspd) >= move_spd[1] 
+    {
 //<<<<<<< Updated upstream
 			
-			if sprite_index != run_spr
+		if sprite_index != run_spr
 //=======
-			//Dash
-			if (dash_energy > 0){
-			if sprite_index != dash_air_spr
+		//Dash
+		if (dash_energy > 0){
+		if sprite_index != dash_air_spr
 //>>>>>>> Stashed changes
-            {image_index = 0}
-			sprite_index = dash_air_spr;
-			}//Run
-			else{
-			if sprite_index != run_spr
-            {image_index = 0}
-			sprite_index = run_spr;
-			}
+        {image_index = 0}
+		sprite_index = dash_air_spr;
+		}//Run
+		else{
+		if sprite_index != run_spr
+        {image_index = 0}
+		sprite_index = run_spr;
 		}
-    //Walk
-    else 
-        {if sprite_index != walk_spr
-            {image_index = 0}
-        sprite_index = walk_spr};
-    }
+	}
+//Walk
+else 
+    {if sprite_index != walk_spr
+        {image_index = 0}
+    sprite_index = walk_spr};
+}
 //Jump
 else //if (!on_ground) || (jump_key)
-    {    
-    //Airdash
-    if abs(xspd) >= move_spd[1] 
-        {if sprite_index != dash_air_spr 
-            {image_index = 0}
-        sprite_index = dash_air_spr;}
+{    
+//Airdash
+	image_speed = 1
+	if abs(xspd) >= move_spd[1] 
+	    {if sprite_index != dash_air_spr 
+	        {image_index = 0}
+	    sprite_index = dash_air_spr;}
 	//Downdash
 	else if yspd = (dash_distance/dash_time) + 10
 		{if sprite_index != dash_down_spr
 			{image_index = 0}
 		sprite_index = dash_down_spr;}
 	//Jump
-    else if sprite_index != dash_air_spr || sprite_index != dash_down_spr
-        {
+	else if sprite_index != dash_air_spr || sprite_index != dash_down_spr
+	    {
 			if sprite_index != jump_spr
-            {
+	        {
 				if (jump_key) {image_index = 0} // if you press jump
 				else {image_index = 1} // Otherwise act like falling
 			}
@@ -152,7 +156,6 @@ else //if (!on_ground) || (jump_key)
 				if (jump_key_pressed && can_jump) {image_index = 0} //Double jumping refresh animation
 			}
 			sprite_index = jump_spr
-		
 		}
 }
 
@@ -218,6 +221,11 @@ scr_state_swim = function()
 	scr_state_jump()
 	//Movement
     scr_movement(!_at_surface)
+	
+	if abs(xspd) == 0 
+	{image_speed = 0; image_index = 0;}
+	else{image_speed = 1;}
+	sprite_index = swim_spr
 }
 
 state = scr_state_idle;
