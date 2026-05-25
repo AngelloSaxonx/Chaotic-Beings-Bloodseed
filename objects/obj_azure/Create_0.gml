@@ -196,7 +196,7 @@ scr_state_swim = function()
     //If there's water nearby
     if instance_exists(_ins)
     {
-        var _yy = _ins.bbox_top+8 //_ins.y+sprite_height/2
+        var _yy = _ins.bbox_top+12 //_ins.y+sprite_height/2
         if (y > _yy){y = _yy};
 
         //If you go to water
