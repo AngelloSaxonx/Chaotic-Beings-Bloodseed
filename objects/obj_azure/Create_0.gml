@@ -32,9 +32,9 @@ jump_count = 0;
 jump_hold_timer = 0;
 jump_hold_frames[0] = 16;
 
-jspd[0] = -(3)*2; //Double the jump
+jspd[0] = -3*2; //Double the jump
 jump_hold_frames[1] = 12;
-jspd[1] = -(5)*2; //This too
+jspd[1] = -5*2; //This too
 
 can_dash = true;
 dash_distance = 40;

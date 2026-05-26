@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collision",
+  "%Name":"Obj_nyixling",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_collision",
+  "name":"Obj_nyixling",
   "overriddenProperties":[],
   "parent":{
-    "name":"Debug",
-    "path":"folders/Objets/Debug.yy",
+    "name":"NPC",
+    "path":"folders/Objets/NPC.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_collision",
-    "path":"sprites/spr_collision/spr_collision.yy",
+    "name":"spr_nyixling_idle",
+    "path":"sprites/spr_nyixling_idle/spr_nyixling_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
