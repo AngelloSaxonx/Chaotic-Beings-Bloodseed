@@ -1,5 +1,4 @@
-image_xscale = 2
-image_yscale = 2
+idle_spr = spr_nyixling;
 TargetX = obj_azure.x
 TargetY = obj_azure.y
 path = path_add()

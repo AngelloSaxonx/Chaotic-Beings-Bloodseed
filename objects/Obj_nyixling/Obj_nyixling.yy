@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_nyixling",
+  "%Name":"obj_nyixling",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_nyixling",
+  "name":"obj_nyixling",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objets/NPC.yy",
+    "name":"Ennemies",
+    "path":"folders/Objets/Ennemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_nyixling_idle",
-    "path":"sprites/spr_nyixling_idle/spr_nyixling_idle.yy",
+    "name":"spr_nyixling",
+    "path":"sprites/spr_nyixling/spr_nyixling.yy",
   },
   "spriteMaskId":null,
   "visible":true,
