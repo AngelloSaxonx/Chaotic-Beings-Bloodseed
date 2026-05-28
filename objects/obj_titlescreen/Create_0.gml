@@ -1,4 +1,4 @@
-option_x = 120;
+option_x = 100;
 option_y = 120;
  
 option_border = 8;
@@ -11,3 +11,4 @@ option[3] = "CREDITS";
 option[4] = "CLOSE GAME";
 
 option_lenght = array_length(option);
+pos = 0;
