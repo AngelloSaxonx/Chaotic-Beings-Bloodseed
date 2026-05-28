@@ -137,3 +137,5 @@ if place_meeting(x+xspd,y,obj_collision)
 x += xspd*spd
 y += yspd
 #endregion
+
+depth = 300;

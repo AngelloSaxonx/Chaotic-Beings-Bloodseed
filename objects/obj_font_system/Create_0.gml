@@ -1,0 +1,1 @@
+global.classic_font = font_add_sprite_ext(spr_classic_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ", true, 1);
