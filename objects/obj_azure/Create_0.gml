@@ -207,15 +207,18 @@ scr_state_swim = function()
             if y+yspd <= _ins.y
             {
                 y = _ins.y;
-                yspd = 0;
-                _at_surface = true;
-				if (on_water = false) // reseting state
+                if yspd >= 0
 				{
-					state = scr_state_idle
+					_at_surface = true;
 				}
             }
         }
     }
+	
+	if (on_water == false) // reseting state
+	{
+		state = scr_state_idle
+	}
 	//Y
 	if (jump_key_pressed && can_jump) {sprite_index = jump_spr; image_index = 0;} //Double jumping refresh animation
 	scr_state_jump()

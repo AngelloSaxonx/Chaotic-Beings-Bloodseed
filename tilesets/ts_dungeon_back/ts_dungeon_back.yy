@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet4",
+  "%Name":"ts_dungeon_back",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet4",
-  "out_columns":17,
+  "name":"ts_dungeon_back",
+  "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Queen_bonus",
-    "path":"sprites/Queen_bonus/Queen_bonus.yy",
+    "name":"spr_dungeon_back",
+    "path":"sprites/spr_dungeon_back/spr_dungeon_back.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":20,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":300,
+  "tile_count":28,
 }

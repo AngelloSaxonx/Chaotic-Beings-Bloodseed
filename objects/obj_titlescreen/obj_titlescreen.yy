@@ -10,8 +10,8 @@
   "name":"obj_titlescreen",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objets/Menu.yy",
+    "name":"A!Title",
+    "path":"folders/Objets/A!Title.yy",
   },
   "parentObjectId":null,
   "persistent":false,
