@@ -6,17 +6,31 @@ with (obj_collision)
     if (id != other.id)
     {
 
-        var dist = point_distance(other.RPoint, other.YPoint, LPoint, YPoint);
+        var dis = point_distance(other.RPoint, other.YPoint, LPoint, YPoint);
 
         // must be close enough
-        if (dist <= other.max_dist)
+        if (dis <= other.max_dist)
         {
             // nearest valid wall
-            if (dist < other.dist)
+            if (dis < other.dist)
             {
-                other.dist = dist;
+                other.dist = dis;
                 other.nearest = id;
             }
         }
+		
+		var dis2 = point_distance(other.LPoint, other.YPoint, RPoint, YPoint);
+
+        // must be close enough
+        if (dis2 <= other.max_dist)
+        {
+            // nearest valid wall
+            if (dis2 < other.dist2)
+            {
+                other.dist2 = dis2;
+                other.nearest2 = id;
+            }
+        }
+		
     }
 }
