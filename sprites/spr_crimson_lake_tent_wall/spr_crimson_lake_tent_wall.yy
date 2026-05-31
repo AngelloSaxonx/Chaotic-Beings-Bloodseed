@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_crimson_lake_tent_wall",
   "bboxMode":0,
-  "bbox_bottom":199,
+  "bbox_bottom":159,
   "bbox_left":0,
   "bbox_right":159,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"771a84bc-8aff-4802-979b-a2dcbbc97b5f","name":"771a84bc-8aff-4802-979b-a2dcbbc97b5f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"23876bbd-fbf1-4955-9dd5-024e8abf4222","name":"23876bbd-fbf1-4955-9dd5-024e8abf4222","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":20,
   "gridY":20,
-  "height":200,
+  "height":160,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7b7e0182-c420-495e-8acf-37103dc1af6f","blendMode":0,"displayName":"default","isLocked":false,"name":"7b7e0182-c420-495e-8acf-37103dc1af6f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"dbce6705-54f0-41dd-a25f-07888b3530ba","blendMode":0,"displayName":"default","isLocked":false,"name":"dbce6705-54f0-41dd-a25f-07888b3530ba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_crimson_lake_tent_wall",
   "nineSlice":{
@@ -40,7 +40,7 @@
       0,
       1,
     ],
-    "top":180,
+    "top":125,
   },
   "origin":7,
   "parent":{
@@ -88,14 +88,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"771a84bc-8aff-4802-979b-a2dcbbc97b5f","path":"sprites/spr_crimson_lake_tent_wall/spr_crimson_lake_tent_wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"de221854-264b-4950-9923-96cb7b20b0fe","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23876bbd-fbf1-4955-9dd5-024e8abf4222","path":"sprites/spr_crimson_lake_tent_wall/spr_crimson_lake_tent_wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8a9693a5-c228-406d-90a3-8afedefee76e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":80,
-    "yorigin":200,
+    "yorigin":160,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
