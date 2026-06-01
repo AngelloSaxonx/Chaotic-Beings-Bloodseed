@@ -139,7 +139,7 @@ if !place_meeting(x,y+1,obj_collision)
 	yspd += grav
 }
 
-var coll1 = collision_rectangle(bbox_left,bbox_top+yspd-(1-should_jump),bbox_right,bbox_bottom+yspd+(1-should_jump),obj_collision,false,true)
+var coll1 = collision_rectangle(bbox_left,bbox_top+yspd+(1-should_jump),bbox_right,bbox_bottom+yspd+(1-should_jump),obj_collision,false,true)
 if (coll1)
 {
 	yspd = 0;
