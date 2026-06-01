@@ -5,6 +5,7 @@ mask_spr = spr_azure;
 idle_spr = spr_azure;
 walk_spr = spr_azure_walk;
 run_spr = spr_azure_run;
+ledge_spr = spr_azure_ledge
 
 jump_spr = spr_azure_jump;
 dash_air_spr = spr_azure_dash_air;
@@ -25,6 +26,7 @@ term_vel = 4;
 on_ground = true;
 on_water = false
 in_transition = false
+ledge_in = false
 
 can_jump = true // in case
 jump_max = 2;
@@ -35,6 +37,7 @@ jump_hold_frames[0] = 16;
 jspd[0] = -3*2; //Double the jump
 jump_hold_frames[1] = 12;
 jspd[1] = -5*2; //This too
+ledge_jspd = 6//4.25
 
 can_dash = true;
 dash_distance = 40;
@@ -95,6 +98,22 @@ scr_state_idle = function()
 
     scr_state_jump()
     scr_movement();
+	
+	var coll = instance_place(x+(face*move_spd[0]),y,obj_collision)
+	if (coll && coll.bbox_top > bbox_top && !(instance_place(x,y+yspd,obj_collision)))
+	{
+		state = scr_wall_recovery
+		xspd = 0;
+		yspd = 0;
+		/*if !(on_water || on_ground) 
+		{
+			if (face == 1)
+			{x = coll.bbox_left}
+			else if (face == -1)
+			{x = coll.bbox_right}
+			y = coll.bbox_top
+		}*/
+	}
 
 if on_ground
     //Idle
@@ -229,6 +248,55 @@ scr_state_swim = function()
 	{image_speed = 0; image_index = 0;}
 	else{image_speed = 1;}
 	sprite_index = swim_spr
+}
+
+scr_wall_recovery = function()
+{
+	if sprite_index != ledge_spr
+    {image_index = 0}
+	sprite_index = ledge_spr
+	
+	if (image_index > 1)
+	{
+		if (ledge_in == false)
+		{yspd = -ledge_jspd; ledge_in = true}
+		if (yspd < 0)
+		{
+			if (image_index >= 6)
+			{
+				image_index = 2
+			}
+			xspd = (face*move_spd[0])
+		}
+		else if (!place_meeting(x,y+1,obj_collision)) && (yspd >= 0)
+		{
+			image_index = 6.95
+			xspd = (face*move_spd[0])
+		}
+		else if (place_meeting(x,y+1,obj_collision)) && (yspd >= 0)
+		{
+			if (image_index >= image_number-1)
+			{state = scr_state_idle; ledge_in = false}
+			xspd = 0
+		}
+		
+		if !place_meeting(x,y+1,obj_collision)
+		{
+			yspd += grav
+		}
+	}
+	
+	if place_meeting(x,y+yspd,obj_collision)
+	{
+		yspd = 0
+	}
+	if place_meeting(x+xspd,y,obj_collision)
+	{
+		xspd = 0;
+	}
+	
+	x += xspd
+	y += yspd
 }
 
 state = scr_state_idle;
