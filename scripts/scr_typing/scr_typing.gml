@@ -1,3 +1,12 @@
+function scr_start_cutscene(_cutscene)
+{
+	if instance_exists(obj_textbox)
+	return;
+	
+	var _inst = instance_create_depth(x, y, -999, obj_textbox)
+	_inst.set_cutscene(_cutscene)
+}
+
 function scr_typing( x, y, _text, _progress, _width)
 {
 	var _draw_x = 0;

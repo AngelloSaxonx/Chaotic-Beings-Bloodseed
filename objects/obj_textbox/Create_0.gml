@@ -1,6 +1,6 @@
 ///Positions
-marging = 16;
-padding = 8;
+marging = 20;
+padding = 10;
 width = display_get_gui_width() - marging*2;
 height = display_get_gui_height() - marging;
 x  = (display_get_gui_width() - width) / 2;
@@ -15,16 +15,15 @@ text_y = padding;
 text_width = width - padding*2;
 
 actions = [];
-current_action = -1;
+current_action = 0;
 text_progress = 0;
 text_lenght = 0;
 text = "";
 
-set_dialogue = function(_dialogue)
+set_cutscene = function(_cutscene)
 {
-	actions = global.dialogue[$ _dialogue];
-	current_action = -1;
-	
+	actions = scr_cutscene(_cutscene)
+	current_action = 0;
 	next();
 }
 
@@ -47,3 +46,4 @@ set_text = function(_text)
 	text_lenght = string_length(_text);
 	text_progress = 0;
 }
+
