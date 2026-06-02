@@ -45,7 +45,7 @@
   "origin":7,
   "parent":{
     "name":"Arena Tent",
-    "path":"folders/Sprites/Environement/Crimson Gorge/Structures Decor/Arena Tent.yy",
+    "path":"folders/Sprites/Environement/Crimson Garden/Structures Decor/Arena Tent.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -45,7 +45,7 @@
   "origin":7,
   "parent":{
     "name":"Lake Tent",
-    "path":"folders/Sprites/Environement/Crimson Gorge/Structures Decor/Lake Tent.yy",
+    "path":"folders/Sprites/Environement/Crimson Garden/Structures Decor/Lake Tent.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
