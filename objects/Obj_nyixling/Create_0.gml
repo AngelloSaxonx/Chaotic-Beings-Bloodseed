@@ -1,7 +1,10 @@
 y = y-1
 idle_spr = spr_nyixling;
-TargetX = obj_azure.x
-TargetY = obj_azure.y
+Target = obj_azure
+destinationX = x
+destinationY = y
+TargetX = destinationX
+TargetY = destinationY
 path = path_add()
 xspd = 0;
 yspd = 0;
@@ -16,5 +19,6 @@ pit_check_depth = 20
 jump_range = 120 //jspd*15
 fall_range = 100 //spd*50
 detect_range = 120
+time_rerun = 1;
 
 can_jump = 1
