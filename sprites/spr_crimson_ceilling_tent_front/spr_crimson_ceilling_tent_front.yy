@@ -45,7 +45,7 @@
   "origin":7,
   "parent":{
     "name":"Ceiling Tent",
-    "path":"folders/Sprites/Environement/Crimson Garden/Structures Decor/Ceiling Tent.yy",
+    "path":"folders/Sprites/Environement/Crimson Gorge/Structures Decor/Ceiling Tent.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

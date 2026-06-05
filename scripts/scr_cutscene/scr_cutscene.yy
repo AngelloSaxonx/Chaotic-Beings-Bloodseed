@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_actions",
+  "%Name":"scr_cutscene",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_actions",
+  "name":"scr_cutscene",
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Scripts/Dialogue.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

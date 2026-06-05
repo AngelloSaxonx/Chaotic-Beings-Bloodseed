@@ -1,12 +1,9 @@
-function scr_cutscene(_cutscene)
-{
-	switch(_cutscene)
-	{
-		//test
-		case("test"):
-		new scr_text("testing test!")
-		break;
-		
-		
-	}
-}
+global.cutscenes = {};
+
+global.cutscenes[$ "test"] = 
+[
+	new scr_text("texter my friend"),
+	new scr_text("how are you?")
+]
+
+

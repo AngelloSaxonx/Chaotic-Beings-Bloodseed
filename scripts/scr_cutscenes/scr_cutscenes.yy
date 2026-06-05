@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_cutscenes",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Dialogue",
+    "path":"folders/Scripts/Dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

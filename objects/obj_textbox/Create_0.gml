@@ -1,28 +1,35 @@
-///Positions
-marging = 16;
-padding = 8;
-width = display_get_gui_width() - marging*2;
-height = display_get_gui_height() - marging;
-x  = (display_get_gui_width() - width) / 2;
-y = display_get_gui_height() - height - marging;
-//Text Definition
+//Position
+x_margin = 5;
+y_margin = 85;
+padding = 6;
+width =	display_get_gui_width() - x_margin * 2;
+height = display_get_gui_height() - y_margin * 2;
+
+x = (display_get_gui_width() - width) / 2;
+y = display_get_gui_height() - height - x_margin;
+
+//Text
 text_sprite = spr_textbox_classic;
 text_font = global.classic_font;
 text_color = #ffffff;
-text_speed = 0.6;
-text_x = padding;
-text_y = padding;
+text_speed = 1;
+text_x = padding + 1;
+text_y = padding - 10;
 text_width = width - padding*2;
 
+//Actions
 actions = [];
 current_action = -1;
-text_progress = 0;
-text_lenght = 0;
-text = "";
 
-set_dialogue = function(_dialogue)
+//Functions
+text = "";
+text_progress = 0;
+text_length = 0;
+
+//Cutscene Methods
+start_cutscene = function(_cutscene)
 {
-	actions = global.dialogue[$ _dialogue];
+	actions = global.cutscenes[$ _cutscene]
 	current_action = -1;
 	
 	next();
@@ -37,13 +44,14 @@ next = function()
 	}
 	else
 	{
-		actions[current_action].act(id);
+		actions[current_action].act(id)
 	}
+	
 }
 
-set_text = function(_text)
+set_text = function(_set_text)
 {
-	text = _text;
-	text_lenght = string_length(_text);
+	text = _set_text;
+	text_length = string_length(_set_text);
 	text_progress = 0;
 }

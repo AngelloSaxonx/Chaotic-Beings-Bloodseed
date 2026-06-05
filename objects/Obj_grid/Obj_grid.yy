@@ -9,8 +9,8 @@
   "name":"Obj_grid",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objets/NPC.yy",
+    "name":"Ennemies",
+    "path":"folders/Objets/Ennemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,

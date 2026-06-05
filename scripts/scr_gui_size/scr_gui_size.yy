@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_actions",
+  "%Name":"scr_gui_size",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_actions",
+  "name":"scr_gui_size",
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Scripts/Dialogue.yy",
+    "name":"Menu",
+    "path":"folders/Scripts/Menu.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

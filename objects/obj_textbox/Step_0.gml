@@ -1,15 +1,14 @@
 scr_menu_control();
+text_progress = min(text_progress + text_speed, text_length);
 
-text_progress = min(text_progress + text_speed, text_lenght);
-
-if (text_progress == text_lenght)
+if (text_progress == text_length)
 {
 	if accept_key
 	{
 		next();
 	}
 }
-else if accept_key
+else if cancel_key
 {
-	text_progress = text_lenght;
+	text_progress = text_length
 }
