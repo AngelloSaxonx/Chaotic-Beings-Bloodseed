@@ -37,7 +37,7 @@ jump_hold_frames[0] = 16;
 jspd[0] = -3*2; //Double the jump
 jump_hold_frames[1] = 12;
 jspd[1] = -5*2; //This too
-ledge_jspd = 6//4.25
+ledge_jspd = 5//6
 
 can_dash = true;
 dash_distance = 40;
@@ -100,7 +100,10 @@ scr_state_idle = function()
     scr_movement();
 	
 	var coll = instance_place(x+(face*move_spd[0]),y,obj_collision)
-	if (coll && coll.bbox_top > bbox_top && !(instance_place(x,y+yspd,obj_collision)))
+	if ( (coll && (
+	(coll.grabableBot == coll.grabableTop && coll.grabableBot > bbox_top) 
+	|| (coll.grabableBot != coll.grabableTop && (coll.grabableBot > bbox_top && coll.grabableTop < bbox_top))))
+	&& !(instance_place(x,y+yspd,obj_collision)))
 	{
 		state = scr_wall_recovery
 		xspd = 0;
@@ -270,6 +273,13 @@ scr_wall_recovery = function()
 		}
 		else if (!place_meeting(x,y+1,obj_collision)) && (yspd >= 0)
 		{
+			state = scr_state_idle;
+			ledge_in = false
+			image_index = 0;
+			xspd = 0
+		}
+		/*else if (!place_meeting(x,y+1,obj_collision)) && (yspd >= 0)
+		{
 			image_index = 6.95
 			xspd = (face*move_spd[0])
 		}
@@ -278,11 +288,13 @@ scr_wall_recovery = function()
 			if (image_index >= image_number-1)
 			{state = scr_state_idle; ledge_in = false}
 			xspd = 0
-		}
+		}*/
 		
 		if !place_meeting(x,y+1,obj_collision)
 		{
-			yspd += grav
+			if (yspd < term_vel)
+			{yspd += grav}else
+			{yspd = term_vel}
 		}
 	}
 	
