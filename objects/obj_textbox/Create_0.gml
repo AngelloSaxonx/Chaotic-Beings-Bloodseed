@@ -44,7 +44,7 @@ enum PORTRAIT_SIDE
 }
 
 speaker_name = "";
-speaker_width 
+speaker_width = 0;
 
 //Cutscene Methods
 start_cutscene = function(_cutscene)
