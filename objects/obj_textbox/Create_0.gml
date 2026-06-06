@@ -17,14 +17,34 @@ text_x = padding + 1;
 text_y = padding - 10;
 text_width = width - padding*2;
 
+//Character
+speaker_x = padding;
+speaker_y = 0;
+speaker_font = global.classic_font
+speaker_color = #ff0000
+
 //Actions
 actions = [];
 current_action = -1;
 
-//Functions
+//DO NOT EDIT!!
 text = "";
 text_progress = 0;
 text_length = 0;
+
+portrait_sprite = -1;
+portrait_width = sprite_get_width(text_sprite);
+portrait_height = sprite_get_height(text_sprite);
+portrait_side = PORTRAIT_SIDE.LEFT;
+
+enum PORTRAIT_SIDE
+{
+	LEFT,
+	RIGHT
+}
+
+speaker_name = "";
+speaker_width 
 
 //Cutscene Methods
 start_cutscene = function(_cutscene)
