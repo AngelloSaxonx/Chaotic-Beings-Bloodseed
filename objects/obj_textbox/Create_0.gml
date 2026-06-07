@@ -44,7 +44,8 @@ enum PORTRAIT_SIDE
 }
 
 speaker_name = "";
-speaker_width = 0;
+speaker_width = sprite_get_width(spr_textbox_name);
+speaker_height = sprite_get_height(spr_textbox_name);
 
 //Cutscene Methods
 start_cutscene = function(_cutscene)

@@ -177,6 +177,7 @@
     {"id":{"name":"spr_task_gather","path":"sprites/spr_task_gather/spr_task_gather.yy",},},
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},},
     {"id":{"name":"spr_textbox_classic","path":"sprites/spr_textbox_classic/spr_textbox_classic.yy",},},
+    {"id":{"name":"spr_textbox_name","path":"sprites/spr_textbox_name/spr_textbox_name.yy",},},
     {"id":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},},
     {"id":{"name":"spr_warp","path":"sprites/spr_warp/spr_warp.yy",},},
     {"id":{"name":"Sprite40_1","path":"sprites/Sprite40_1/Sprite40_1.yy",},},
@@ -189,7 +190,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_titlescreen","path":"rooms/rm_titlescreen/rm_titlescreen.yy",},},
-    {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"roomId":{"name":"rm_crimson_cliff_1","path":"rooms/rm_crimson_cliff_1/rm_crimson_cliff_1.yy",},},
     {"roomId":{"name":"rm_crimson","path":"rooms/rm_crimson/rm_crimson.yy",},},
     {"roomId":{"name":"rm_crimson_dung_1","path":"rooms/rm_crimson_dung_1/rm_crimson_dung_1.yy",},},
@@ -198,6 +198,7 @@
     {"roomId":{"name":"rm_crimson_statue_1","path":"rooms/rm_crimson_statue_1/rm_crimson_statue_1.yy",},},
     {"roomId":{"name":"rm_crimson_cliff_2","path":"rooms/rm_crimson_cliff_2/rm_crimson_cliff_2.yy",},},
     {"roomId":{"name":"rm_crimson_training","path":"rooms/rm_crimson_training/rm_crimson_training.yy",},},
+    {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
