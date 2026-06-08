@@ -24,7 +24,7 @@ if (sprite_exists(portrait_sprite))
 		_draw_portrait_xscale= -1;
 	}
 	
-	draw_sprite(spr_textbox_portrait, 0, _draw_portrait_x + portrait_width / 2 - 3, _draw_portrait_y + portrait_height / 2 - 3);
+	draw_sprite(background_sprite, 0, _draw_portrait_x + portrait_width / 2 - 3, _draw_portrait_y + portrait_height / 2 - 3);
 	
 	var _subming = 0;
 	if (!_finished)
@@ -38,7 +38,7 @@ if speaker_name != ""
 {
 	var  _name_w = max(string_width(speaker_name), speaker_width);
 	
-	draw_sprite_stretched(spr_textbox_name, 0, x + speaker_x / 2 - 3, y + speaker_y - speaker_height, _name_w, speaker_height)
+	draw_sprite_stretched(text_sprite, 0, x + speaker_x / 2 - 3, y + speaker_y - speaker_height, _name_w, speaker_height)
 	
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);

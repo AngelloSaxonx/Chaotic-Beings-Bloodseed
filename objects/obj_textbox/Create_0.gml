@@ -37,8 +37,9 @@ text_progress = 0;
 text_length = 0;
 
 portrait_sprite = -1;
-portrait_width = sprite_get_width(spr_textbox_portrait);
-portrait_height = sprite_get_height(spr_textbox_portrait);
+background_sprite = spr_textbox_background;
+portrait_width = sprite_get_width(spr_textbox_background);
+portrait_height = sprite_get_height(spr_textbox_background);
 portrait_side = PORTRAIT_SIDE.LEFT;
 
 enum PORTRAIT_SIDE
@@ -48,7 +49,7 @@ enum PORTRAIT_SIDE
 }
 
 speaker_name = "Azure";
-speaker_width = sprite_get_width(spr_textbox_name);
+speaker_width = sprite_get_width((spr_textbox_name));
 speaker_height = sprite_get_height(spr_textbox_name);
 speaker_font = global.classic_font;
 speaker_color = #ffffff;
