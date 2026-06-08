@@ -1,7 +1,7 @@
 //Position
 x_margin = 5;
 y_margin = 85;
-padding = 6;
+padding = 8;
 width =	display_get_gui_width() - x_margin * 2;
 height = display_get_gui_height() - y_margin * 2;
 
@@ -16,6 +16,10 @@ text_speed = 1;
 text_x = padding + 1;
 text_y = padding - 10;
 text_width = width - padding*2;
+
+//Portrait
+portrait_x = padding;
+portrait_y = padding;
 
 //Character
 speaker_x = padding;
@@ -33,8 +37,8 @@ text_progress = 0;
 text_length = 0;
 
 portrait_sprite = -1;
-portrait_width = sprite_get_width(text_sprite);
-portrait_height = sprite_get_height(text_sprite);
+portrait_width = sprite_get_width(spr_textbox_portrait);
+portrait_height = sprite_get_height(spr_textbox_portrait);
 portrait_side = PORTRAIT_SIDE.LEFT;
 
 enum PORTRAIT_SIDE
@@ -43,10 +47,11 @@ enum PORTRAIT_SIDE
 	RIGHT
 }
 
-speaker_name = "";
+speaker_name = "Azure";
 speaker_width = sprite_get_width(spr_textbox_name);
 speaker_height = sprite_get_height(spr_textbox_name);
-
+speaker_font = global.classic_font;
+speaker_color = #ffffff;
 //Cutscene Methods
 start_cutscene = function(_cutscene)
 {
