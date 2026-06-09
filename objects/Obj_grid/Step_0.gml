@@ -1,14 +1,14 @@
 with (obj_crimson_ceilling_tent)
 {
-	mp_grid_clear_rectangle(Obj_grid.cell,bbox_left,bbox_top+81,bbox_right,bbox_bottom-21)
+	mp_grid_clear_rectangle(Obj_grid.cell,bbox_left,bbox_top+80,bbox_right,bbox_bottom-40)
 }
 
 with (obj_crimson_arena_tent)
 {
-	mp_grid_clear_rectangle(Obj_grid.cell,bbox_left,bbox_top+61,bbox_right,bbox_bottom-41)
+	mp_grid_clear_rectangle(Obj_grid.cell,bbox_left,bbox_top+60,bbox_right,bbox_bottom-60)
 }
 
 with (obj_crimson_lake_tent)
 {
-	mp_grid_clear_rectangle(Obj_grid.cell,bbox_left,bbox_top+61,bbox_right,bbox_bottom-41)
+	mp_grid_clear_rectangle(Obj_grid.cell,bbox_left,bbox_top+60,bbox_right,bbox_bottom-60)
 }

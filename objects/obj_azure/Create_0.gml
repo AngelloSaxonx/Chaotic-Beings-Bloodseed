@@ -37,11 +37,12 @@ jump_hold_frames[0] = 16;
 jspd[0] = -3*2; //Double the jump
 jump_hold_frames[1] = 12;
 jspd[1] = -5*2; //This too
-ledge_jspd = 5//6
+ledge_jspd = 6
 
 can_dash = true;
 dash_distance = 40;
 dash_time = 10;
+ledge_fall_time = 20
 
 fast_step = true;
 double_jump = true;
@@ -246,12 +247,14 @@ scr_state_swim = function()
 
 scr_wall_recovery = function()
 {
+	//grabbed
 	if sprite_index != ledge_spr
     {image_index = 0}
 	sprite_index = ledge_spr
 	
 	if (image_index > 1)
 	{
+		//start rolling
 		if (ledge_in == false)
 		{yspd = -ledge_jspd; ledge_in = true}
 		if (yspd < 0)
@@ -262,24 +265,33 @@ scr_wall_recovery = function()
 			}
 			xspd = (face*move_spd[0])
 		}
-		else if (!place_meeting(x,y+1,obj_collision)) && (yspd >= 0)
-		{
-			state = scr_state_idle;
-			ledge_in = false
-			image_index = 0;
-			xspd = 0
+		//staring backward
+		else if (!place_meeting(x,y+1,obj_collision)) && (yspd >= 0){
+			//if doesn't land in time, switch to idle
+			if (ledge_fall_time <= 0)
+			{
+				ledge_fall_time = 20;
+				state = scr_state_idle;
+				ledge_in = false;
+				image_index = 0;
+				xspd = 0;
+			}
+			// if have time, staring backward and going forward
+			else
+			{
+				ledge_fall_time--;
+				image_index = 6.95
+				xspd = (face*move_spd[0])
+			}
 		}
-		/*else if (!place_meeting(x,y+1,obj_collision)) && (yspd >= 0){
-			image_index = 6.95
-			xspd = (face*move_spd[0])
-		}
+		//if land in time, landing animation
 		else if (place_meeting(x,y+1,obj_collision)) && (yspd >= 0)
 		{
 			if (image_index >= image_number-1)
-			{state = scr_state_idle; ledge_in = false}
+			{state = scr_state_idle; ledge_in = false;ledge_fall_time = 20;}
 			xspd = 0
-		}*/
-		
+		}
+		//Grav
 		if !place_meeting(x,y+1,obj_collision)
 		{
 			if (yspd < term_vel)
@@ -287,7 +299,7 @@ scr_wall_recovery = function()
 			{yspd = term_vel}
 		}
 	}
-	
+	//Coll
 	if place_meeting(x,y+yspd,obj_collision)
 	{
 		yspd = 0
@@ -296,7 +308,7 @@ scr_wall_recovery = function()
 	{
 		xspd = 0;
 	}
-	
+	//Movement
 	x += xspd
 	y += yspd
 }
