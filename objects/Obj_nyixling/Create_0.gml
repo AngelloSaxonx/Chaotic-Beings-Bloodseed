@@ -1,14 +1,12 @@
-y = y-1
-idle_spr = spr_nyixling;
-Target = obj_azure
-destinationX = x
 destinationY = y
 TargetX = destinationX
 TargetY = destinationY
+check_my_self = 1;
 path = path_add()
 xspd = 0;
 yspd = 0;
 grav = .275;
+max_grav = 4
 jspd = 8
 spd = 2
 should_jump = 0;
@@ -19,6 +17,7 @@ pit_check_depth = 20
 jump_range = 120 //jspd*15
 fall_range = 100 //spd*50
 detect_range = 120
-time_rerun = 1;
-
+timer_rescout = 300;
 can_jump = 1
+
+state = "Scouting"

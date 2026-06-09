@@ -1,11 +1,30 @@
-if collision_circle(x,y_ground,detect_range,Target,false,true)
+if collision_circle(x,y_ground,detect_range,Target,false,true) && (!collision_line(x,y-1,Target.x,Target.y-1,obj_collision,false,true))
 {
 destinationX = Target.x
 destinationY = Target.y
 }
 else
 {
-if (time_rerun = 1) {time_rerun = 0; alarm[0] = 300}
+if (timer_rescout > 0) 
+{
+	timer_rescout--;
+	if (check_my_self = 1)
+	{
+		destinationX = x
+		destinationY = y
+	}
+}
+else
+{
+	timer_rescout = 300;
+	check_my_self = 0;
+	randomise()
+	var roll = irandom(instance_number(obj_collision)-1)
+	var random_coll = instance_find(obj_collision,roll) 
+	destinationX = random_range(random_coll.bbox_left+10,random_coll.bbox_right-10)
+	if (random_coll == obj_crimson_ceilling_tent.id) {destinationY = random_coll.bbox_bottom-20} else {destinationY = random_coll.bbox_top}
+}
+
 }
 
 // Checking Y Ground
@@ -31,7 +50,8 @@ if (coll > 0)
 
 if (nearesty != noone)
 {
-	y_ground = nearesty.bbox_top
+	if (nearesty != obj_crimson_ceilling_tent.id)
+	{y_ground = nearesty.bbox_top} else {y_ground = nearesty.bbox_bottom-20}
 }
 else
 {
@@ -76,9 +96,9 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 		{
 			if collision_rectangle(x,bbox_top,x+(xspd*jump_range),bbox_bottom,obj_collision,false,true) ||
 			(!collision_rectangle(x+(xspd*pit_check_range),bbox_bottom,x+((xspd*pit_check_range)*2),bbox_bottom+pit_check_depth,obj_collision,false,true))
-			{should_jump = 1;} else {
-				should_jump = 0;
-				}
+			{should_jump = 1;} else {should_jump = 0;}
+
+
 		}
 		else
 		{
@@ -160,10 +180,10 @@ else
 //Movement
 #region
 if !place_meeting(x,y+2,obj_collision)
-{yspd += grav}
+{if (yspd < max_grav) {yspd += grav} else {yspd = max_grav} }
 
-var coll1 = collision_rectangle(bbox_left,bbox_top+yspd+(1-should_jump),bbox_right,bbox_bottom+yspd+(1-should_jump),obj_collision,false,true)
-if (coll1)
+if (place_meeting(x,y+1+yspd,obj_collision)) || (place_meeting(x,y+yspd,obj_collision))
+
 {
 	yspd = 0;
 	if (can_jump == 0)
@@ -172,7 +192,7 @@ if (coll1)
 	}
 }
 
-if (should_jump == 1) && (can_jump == 1) && place_meeting(x,y+5,obj_collision)
+if (should_jump == 1) && (can_jump == 1) && place_meeting(x,y+2,obj_collision)
 {
 	yspd = -jspd
 	can_jump = 0;
@@ -188,3 +208,8 @@ y += yspd
 #endregion
 
 depth = 300;
+
+if (bbox_top > room_height)
+{
+	instance_destroy()
+}
