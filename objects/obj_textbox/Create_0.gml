@@ -48,7 +48,7 @@ enum PORTRAIT_SIDE
 	RIGHT
 }
 
-speaker_name = "Azure";
+speaker_name = "";
 speaker_width = sprite_get_width((spr_textbox_name));
 speaker_height = sprite_get_height(spr_textbox_name);
 speaker_font = global.classic_font;

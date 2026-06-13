@@ -12,6 +12,7 @@ if accept_key
 		
 		break;
 		
+		
 		case(5):
 		game_end();
 		break;

@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_crimson_ceilling_tent_wall",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":139,
   "bbox_left":0,
   "bbox_right":159,
   "bbox_top":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1cd6f0ae-2632-40db-a482-e27a05c2f7f0","name":"1cd6f0ae-2632-40db-a482-e27a05c2f7f0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bc7318c3-aff4-4b4e-b8a3-f135e5a47803","name":"bc7318c3-aff4-4b4e-b8a3-f135e5a47803","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":20,
   "gridY":20,
-  "height":160,
+  "height":140,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0f9282da-72db-4da2-8092-56440dfd36be","blendMode":0,"displayName":"default","isLocked":false,"name":"0f9282da-72db-4da2-8092-56440dfd36be","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"51da8970-5792-46ae-9592-36abf43b06fe","blendMode":0,"displayName":"default","isLocked":false,"name":"51da8970-5792-46ae-9592-36abf43b06fe","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_crimson_ceilling_tent_wall",
   "nineSlice":{
@@ -40,7 +40,7 @@
       1,
       1,
     ],
-    "top":20,
+    "top":18,
   },
   "origin":7,
   "parent":{
@@ -88,14 +88,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1cd6f0ae-2632-40db-a482-e27a05c2f7f0","path":"sprites/spr_crimson_ceilling_tent_wall/spr_crimson_ceilling_tent_wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"96427288-4a00-464d-994d-c7fe7f0947ca","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc7318c3-aff4-4b4e-b8a3-f135e5a47803","path":"sprites/spr_crimson_ceilling_tent_wall/spr_crimson_ceilling_tent_wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"565ebaa0-b048-4cc6-b7c8-a2a33a1d1a62","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":80,
-    "yorigin":160,
+    "yorigin":140,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
