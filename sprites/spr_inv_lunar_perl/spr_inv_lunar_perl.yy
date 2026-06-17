@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Items",
-    "path":"folders/Sprites/A!UI/Items.yy",
+    "path":"folders/Sprites/UI/Items.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

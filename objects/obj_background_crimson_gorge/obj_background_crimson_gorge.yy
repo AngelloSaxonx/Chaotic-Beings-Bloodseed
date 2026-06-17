@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_titlescreen",
+  "%Name":"obj_background_crimson_gorge",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_titlescreen",
+  "name":"obj_background_crimson_gorge",
   "overriddenProperties":[],
   "parent":{
-    "name":"Title",
-    "path":"folders/Objets/Title.yy",
+    "name":"Background",
+    "path":"folders/Objets/Background.yy",
   },
   "parentObjectId":null,
   "persistent":false,

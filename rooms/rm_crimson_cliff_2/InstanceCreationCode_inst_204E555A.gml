@@ -1,3 +1,3 @@
 target_x = 20;
 target_y = 180;
-target_rm = rm_crimson_statue_1;
+target_rm = rm_crimson_save_1;

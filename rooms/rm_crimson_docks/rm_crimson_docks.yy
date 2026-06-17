@@ -10,7 +10,6 @@
     {"name":"inst_3D981414","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
     {"name":"inst_360286D1","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
     {"name":"inst_67814C72","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
-    {"name":"inst_4D1AFA2B","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
     {"name":"inst_3927250B","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
     {"name":"inst_49AE7A52","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
     {"name":"inst_63C8A248","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
@@ -29,12 +28,13 @@
     {"name":"inst_54522AD1","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
     {"name":"inst_23A2F9FC","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
     {"name":"inst_2B846CDF","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
+    {"name":"inst_4CAC348C","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Main","depth":0,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_3927250B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3927250B","objectId":{"name":"obj_foreground_red","path":"objects/obj_foreground_red/obj_foreground_red.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
-        {"$GMRInstance":"v4","%Name":"inst_4D1AFA2B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4D1AFA2B","objectId":{"name":"obj_background_ancient_cite","path":"objects/obj_background_ancient_cite/obj_background_ancient_cite.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":20.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4CAC348C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CAC348C","objectId":{"name":"obj_background_crimson_gorge","path":"objects/obj_background_crimson_gorge/obj_background_crimson_gorge.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":20.0,},
         {"$GMRInstance":"v4","%Name":"inst_49AE7A52","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49AE7A52","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":960.0,"y":400.0,},
         {"$GMRInstance":"v4","%Name":"inst_2B846CDF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B846CDF","objectId":{"name":"obj_crimson_ceilling_tent","path":"objects/obj_crimson_ceilling_tent/obj_crimson_ceilling_tent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":680.0,"y":160.0,},
         {"$GMRInstance":"v4","%Name":"inst_54522AD1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54522AD1","objectId":{"name":"obj_crimson_ceilling_tent","path":"objects/obj_crimson_ceilling_tent/obj_crimson_ceilling_tent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":300.0,"y":180.0,},

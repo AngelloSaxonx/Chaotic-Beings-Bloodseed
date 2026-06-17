@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"Lunar Perl",
-    "path":"folders/Sprites/A!Drops/Lunar Perl.yy",
+    "path":"folders/Sprites/Objects/Lunar Perl.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

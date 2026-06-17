@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Garden Station",
-    "path":"folders/Sprites/Environement/Garden Station.yy",
+    "name":"Diverse",
+    "path":"folders/Sprites/Environement/Diverse.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

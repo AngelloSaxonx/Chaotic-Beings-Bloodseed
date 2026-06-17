@@ -9,8 +9,8 @@
   "name":"obj_titlebg",
   "overriddenProperties":[],
   "parent":{
-    "name":"A!Title",
-    "path":"folders/Objets/A!Title.yy",
+    "name":"Title",
+    "path":"folders/Objets/Title.yy",
   },
   "parentObjectId":null,
   "persistent":false,
