@@ -1,12 +1,9 @@
 //Destination
 #region
-if collision_circle(x,y_ground,detect_range,Target,false,true) && (!collision_line(x,y-1,Target.x,Target.y-1,obj_collision,false,true))
+//State
+switch (state)
 {
-destinationX = Target.x
-destinationY = Target.y
-}
-else
-{
+case "Wandering":
 if (timer_rescout > 0) 
 {
 	timer_rescout--;
@@ -18,23 +15,71 @@ if (timer_rescout > 0)
 }
 else
 {
-	check_my_self = 0;
-	randomise()
-	var roll = irandom(instance_number(obj_collision)-1)
-	var random_coll = instance_find(obj_collision,roll)
-	if (random_coll != noone){
-	destinationX = random_range(random_coll.bbox_left+10,random_coll.bbox_right-10)
-	var unqiue_wall = instance_exists(obj_crimson_ceilling_tent)
-	if (random_coll != unqiue_wall) {destinationY = random_coll.bbox_bottom-20} else {destinationY = random_coll.bbox_top}
-	}
-	if mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true)
+	sub_state = choose("Scouting","Scouting","Gathering")
+	
+	switch (sub_state)
 	{
-		timer_rescout = 300;
+		case "Scouting":
+			check_my_self = 0;
+			randomise()
+			var roll = irandom(instance_number(obj_collision)-1)
+			var random_coll = instance_find(obj_collision,roll)
+			if (random_coll != noone){
+			destinationX = random_range(random_coll.bbox_left+10,random_coll.bbox_right-10)
+			var unqiue_wall = instance_exists(obj_crimson_ceilling_tent)
+			if (random_coll != unqiue_wall) {destinationY = random_coll.YPoint+10} else {destinationY = random_coll.bbox_top}
+			}
+			if mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true)
+			{
+				timer_rescout = 300;
+			}
+		break;
+		case "Gathering":
+			check_my_self = 0;
+			randomise()
+			var roll1 = irandom(instance_number(obj_crimson_bush)-1)
+			var random_coll1 = instance_find(obj_crimson_bush,roll1)
+			if (random_coll1 != noone){
+			destinationX = random_coll1.x
+			destinationY = random_coll1.bbox_bottom-1
+			}
+			if mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true)
+			{
+				timer_rescout = 300;
+			}
+		break;
 	}
 }
+break;
+
+
+
+
+case "Chasing":
+destinationX = Target.x
+destinationY = Target.y
+break;
 
 }
+
+// Decetion
+var coll_see = collision_line(x,y-1,Target.x,Target.y-1,obj_collision,false,true)
+if collision_circle(x,y,detect_range,Target,false,true) && 
+((!coll_see) || (coll_see.mask_index != sprite_index && (coll_see.bbox_top <= y-1 && coll_see.bbox_bottom >= y-1)))
+{
+	state = "Chasing";
+}
+else
+{
+	state = "Wandering";
+}
+
 #endregion
+
+
+
+
+
 // Checking Y Ground
 #region
 var list = ds_list_create()
@@ -58,9 +103,7 @@ if (coll > 0)
 
 if (nearesty != noone)
 {
-	var unqiue_wall = instance_exists(obj_crimson_ceilling_tent)
-	if (nearesty != unqiue_wall)
-	{y_ground = nearesty.bbox_top} else {y_ground = nearesty.bbox_bottom-20}
+	y_ground = nearesty.YPoint-10
 }
 else
 {
@@ -87,9 +130,9 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 	
 	if (point_distance(x,y,destinationX,destinationY) > 15)
 	{
-		if (x < _xx-1)
+		if (x < _xx-spd)
 		{xspd = 1}
-		else if (x > _xx+1)
+		else if (x > _xx+spd)
 		{xspd = -1}
 		else
 		{xspd = 0}
@@ -133,6 +176,12 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 	}
 	else
 	{
+		if (x < destinationX-spd)
+		{xspd = 1}
+		else if (x > destinationX+spd)
+		{xspd = -1}
+		else
+		{xspd = 0}
 		should_jump = 0;
 	}
 }
@@ -197,7 +246,6 @@ else
 }
 
 #endregion
-
 //Water Grav
 #region
 var _ins = instance_place( x, y, obj_swim)

@@ -11,3 +11,5 @@ nearest2 = noone;
 dist2 = 999999;
 
 max_dist = 120;
+
+mask_index = sprite_index

@@ -25,4 +25,5 @@ detect_range = 120
 timer_rescout = 300;
 can_jump = 1
 
-state = "Scouting"
+state = "Wandering"
+sub_state = "Scouting"
