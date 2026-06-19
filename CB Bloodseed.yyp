@@ -133,6 +133,7 @@
     {"id":{"name":"rm_crimson_dung_1","path":"rooms/rm_crimson_dung_1/rm_crimson_dung_1.yy",},},
     {"id":{"name":"rm_crimson_save_1","path":"rooms/rm_crimson_save_1/rm_crimson_save_1.yy",},},
     {"id":{"name":"rm_crimson_station_1","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},},
+    {"id":{"name":"rm_crimson_town","path":"rooms/rm_crimson_town/rm_crimson_town.yy",},},
     {"id":{"name":"rm_crimson_training","path":"rooms/rm_crimson_training/rm_crimson_training.yy",},},
     {"id":{"name":"rm_crimson","path":"rooms/rm_crimson/rm_crimson.yy",},},
     {"id":{"name":"rm_titlescreen","path":"rooms/rm_titlescreen/rm_titlescreen.yy",},},
@@ -222,6 +223,7 @@
     {"roomId":{"name":"rm_crimson_station_1","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},},
     {"roomId":{"name":"rm_crimson_docks","path":"rooms/rm_crimson_docks/rm_crimson_docks.yy",},},
     {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
+    {"roomId":{"name":"rm_crimson_town","path":"rooms/rm_crimson_town/rm_crimson_town.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
