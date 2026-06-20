@@ -38,7 +38,7 @@
           28,-3,37,1,50,-8,-2147483648,1,49,-3,37,-48,-2147483648,1,0,-15,-2147483648,-4,45,8,43,44,24,33,33,24,
           43,44,-4,45,-3,10,10,11,52,53,9,10,10,11,52,53,9,-3,10,17,44,12,1,3,10,10,2,43,44,3,10,10,2,1,12,43,
           53,-3,1,8,12,33,24,52,53,24,33,12,-3,1,1,52,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_gorge_front","path":"tilesets/ts_crimson_gorge_front/ts_crimson_gorge_front.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_gorge_front","path":"tilesets/ts_crimson_gorge_front/ts_crimson_gorge_front.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":16,"TileCompressedData":[
           -36,-2147483648,8,0,15,22,13,13,22,14,0,-4,-2147483648,-2,0,4,41,35,23,24,-4,0,4,23,24,32,44,-4,0,2,
           41,44,-8,0,2,41,44,-4,0,2,41,44,-8,0,2,41,44,-4,0,4,41,44,14,15,-4,0,4,14,15,41,44,-4,0,12,41,44,23,

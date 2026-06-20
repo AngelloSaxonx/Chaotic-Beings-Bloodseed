@@ -10,8 +10,8 @@
   "name":"obj_collision",
   "overriddenProperties":[],
   "parent":{
-    "name":"Debug",
-    "path":"folders/Objets/Debug.yy",
+    "name":"Objets",
+    "path":"folders/Objets.yy",
   },
   "parentObjectId":null,
   "persistent":false,
