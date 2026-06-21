@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Items",
-    "path":"folders/Sprites/UI/Items.yy",
+    "name":"Lunar Perl",
+    "path":"folders/Sprites/Objects/Lunar Perl.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
