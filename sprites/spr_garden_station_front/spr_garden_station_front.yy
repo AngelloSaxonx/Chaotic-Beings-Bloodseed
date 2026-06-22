@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Diverse",
-    "path":"folders/Sprites/Environement/Diverse.yy",
+    "path":"folders/Sprites/Areas/Diverse.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

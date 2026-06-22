@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Thematic Decor",
-    "path":"folders/Sprites/Environement/Crimson Gorge/Thematic Decor.yy",
+    "name":"Decor",
+    "path":"folders/Sprites/Areas/Crimson Gorge/Decor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
