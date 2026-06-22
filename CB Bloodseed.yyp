@@ -29,6 +29,7 @@
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pièces","folderPath":"folders/Pièces.yy","name":"Pièces","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Crimson Gorge","folderPath":"folders/Pièces/Crimson Gorge.yy","name":"Crimson Gorge","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Golden Temple","folderPath":"folders/Pièces/Golden Temple.yy","name":"Golden Temple","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pit 100 Trials","folderPath":"folders/Pièces/Pit 100 Trials.yy","name":"Pit 100 Trials","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"0-10","folderPath":"folders/Pièces/Pit 100 Trials/0-10.yy","name":"0-10","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"10-20","folderPath":"folders/Pièces/Pit 100 Trials/10-20.yy","name":"10-20","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -133,6 +134,7 @@
     {"id":{"name":"rm_crimson_lake","path":"rooms/rm_crimson_lake/rm_crimson_lake.yy",},},
     {"id":{"name":"rm_crimson_save_1","path":"rooms/rm_crimson_save_1/rm_crimson_save_1.yy",},},
     {"id":{"name":"rm_crimson_station_1","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},},
+    {"id":{"name":"rm_crimson_temple_1","path":"rooms/rm_crimson_temple_1/rm_crimson_temple_1.yy",},},
     {"id":{"name":"rm_crimson_training","path":"rooms/rm_crimson_training/rm_crimson_training.yy",},},
     {"id":{"name":"rm_crimson","path":"rooms/rm_crimson/rm_crimson.yy",},},
     {"id":{"name":"rm_titlescreen","path":"rooms/rm_titlescreen/rm_titlescreen.yy",},},
@@ -229,6 +231,7 @@
     {"roomId":{"name":"rm_crimson_2","path":"rooms/rm_crimson_2/rm_crimson_2.yy",},},
     {"roomId":{"name":"rm_crimson_arena_2","path":"rooms/rm_crimson_arena_2/rm_crimson_arena_2.yy",},},
     {"roomId":{"name":"rm_crimson_3","path":"rooms/rm_crimson_3/rm_crimson_3.yy",},},
+    {"roomId":{"name":"rm_crimson_temple_1","path":"rooms/rm_crimson_temple_1/rm_crimson_temple_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
