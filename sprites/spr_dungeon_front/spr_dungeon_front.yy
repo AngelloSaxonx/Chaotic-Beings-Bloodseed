@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Tiles Decor",
-    "path":"folders/Sprites/Environement/Bloodline Dungeons/Tiles Decor.yy",
+    "path":"folders/Sprites/Areas/Bloodline Dungeons/Tiles Decor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

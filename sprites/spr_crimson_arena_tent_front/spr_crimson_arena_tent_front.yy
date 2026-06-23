@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"798e7907-db4d-442a-93d6-d359e3a515d6","name":"798e7907-db4d-442a-93d6-d359e3a515d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d42d4b55-ebb8-4fce-8787-4353a7ee1b3d","name":"d42d4b55-ebb8-4fce-8787-4353a7ee1b3d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":20,
   "gridY":20,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"7b7e0182-c420-495e-8acf-37103dc1af6f","blendMode":0,"displayName":"default","isLocked":false,"name":"7b7e0182-c420-495e-8acf-37103dc1af6f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"01eb43c5-5e92-49bc-ba74-e639410f44da","blendMode":0,"displayName":"default","isLocked":false,"name":"01eb43c5-5e92-49bc-ba74-e639410f44da","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_crimson_arena_tent_front",
   "nineSlice":{
@@ -45,7 +45,7 @@
   "origin":7,
   "parent":{
     "name":"Arena Tent",
-    "path":"folders/Sprites/Environement/Crimson Gorge/Structures Decor/Arena Tent.yy",
+    "path":"folders/Sprites/Areas/Crimson Gorge/Structures/Arena Tent.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -88,8 +88,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"798e7907-db4d-442a-93d6-d359e3a515d6","path":"sprites/spr_crimson_arena_tent_front/spr_crimson_arena_tent_front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4ebbdcab-f00b-4b67-92e6-406ade26db5a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d42d4b55-ebb8-4fce-8787-4353a7ee1b3d","path":"sprites/spr_crimson_arena_tent_front/spr_crimson_arena_tent_front.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"aec1f547-23e3-418e-83f0-1170290b588b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

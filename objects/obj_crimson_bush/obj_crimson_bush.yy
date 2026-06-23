@@ -8,8 +8,8 @@
   "name":"obj_crimson_bush",
   "overriddenProperties":[],
   "parent":{
-    "name":"Decors",
-    "path":"folders/Objets/Decors.yy",
+    "name":"Crimson Gorge",
+    "path":"folders/Objets/Crimson Gorge.yy",
   },
   "parentObjectId":{
     "name":"Obj_hurtbox",

@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"8225ee57-f540-4ddd-a39b-d184d5436ae2","name":"8225ee57-f540-4ddd-a39b-d184d5436ae2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"03d49c9e-0e82-440f-85ed-fb9ef4e96940","name":"03d49c9e-0e82-440f-85ed-fb9ef4e96940","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":20,
   "gridY":20,
   "height":120,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"901b7315-c294-49ee-9526-37ca8e486f0d","blendMode":0,"displayName":"default","isLocked":false,"name":"901b7315-c294-49ee-9526-37ca8e486f0d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"cf769ff4-d800-414f-8bac-84375b96ce98","blendMode":0,"displayName":"default","isLocked":false,"name":"cf769ff4-d800-414f-8bac-84375b96ce98","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_crimson_gorge_back",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Tiles Decor",
-    "path":"folders/Sprites/Environement/Crimson Gorge/Tiles Decor.yy",
+    "name":"Tiles",
+    "path":"folders/Sprites/Areas/Crimson Gorge/Tiles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8225ee57-f540-4ddd-a39b-d184d5436ae2","path":"sprites/spr_crimson_gorge_back/spr_crimson_gorge_back.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"272e2273-a97e-4193-97f0-8e55aedfdef4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03d49c9e-0e82-440f-85ed-fb9ef4e96940","path":"sprites/spr_crimson_gorge_back/spr_crimson_gorge_back.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e974e704-2569-43fd-bded-350c3a80cad9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

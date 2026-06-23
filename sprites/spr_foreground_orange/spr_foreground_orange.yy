@@ -45,7 +45,7 @@
   "origin":0,
   "parent":{
     "name":"Color Theory",
-    "path":"folders/Sprites/Environement/Color Theory.yy",
+    "path":"folders/Sprites/Areas/Color Theory.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
