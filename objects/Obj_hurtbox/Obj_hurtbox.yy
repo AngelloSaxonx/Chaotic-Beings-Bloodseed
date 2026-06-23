@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_crimson_bush",
+  "%Name":"Obj_hurtbox",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_crimson_bush",
+  "name":"Obj_hurtbox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Decors",
-    "path":"folders/Objets/Decors.yy",
+    "name":"Gameplay",
+    "path":"folders/Objets/Gameplay.yy",
   },
-  "parentObjectId":{
-    "name":"Obj_hurtbox",
-    "path":"objects/Obj_hurtbox/Obj_hurtbox.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_crimson_bush",
-    "path":"sprites/spr_crimson_bush/spr_crimson_bush.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

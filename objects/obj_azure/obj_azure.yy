@@ -14,7 +14,10 @@
     "name":"Azure",
     "path":"folders/Objets/PC/Azure.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Obj_hurtbox",
+    "path":"objects/Obj_hurtbox/Obj_hurtbox.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

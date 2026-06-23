@@ -1,3 +1,5 @@
+event_inherited()
+
 test_text = 0;
 scr_contol_setup()
 
@@ -55,7 +57,7 @@ scr_state_idle = function()
 
     run_type = run_key;
     
- if (move_dir != 0){
+	if (move_dir != 0){
         xspd = move_dir * move_spd[run_type];
     } else /* if (on_ground == true)*/{
         xspd *= .98;
@@ -86,7 +88,22 @@ scr_state_idle = function()
         
     state = scr_state_dash;
     }
-    
+    //Attack
+	#region
+	var AtkX = x+(image_xscale*face)
+	var AtkY = bbox_top
+	if (attack_key) && (from == noone)
+	{
+		var atk = instance_create_depth(AtkX,AtkY,depth,Obj_hitBox)
+		from = atk.id
+	}
+	if (from != noone) {
+		if instance_exists(from) {from.x = AtkX+xspd; from.y = AtkY+yspd}
+		else {from = noone}
+	};
+	
+	#endregion
+	
     if yspd >= 0 && !place_meeting(x + xspd, y + 1, obj_collision)
     {
     

@@ -15,7 +15,7 @@ if (timer_rescout > 0)
 }
 else
 {
-	sub_state = choose("Scouting","Scouting","Gathering")
+	sub_state = "Gathering"//choose("Scouting","Scouting","Gathering")
 	
 	switch (sub_state)
 	{
@@ -38,6 +38,7 @@ else
 			check_my_self = 0;
 			randomise()
 			var roll1 = irandom(instance_number(obj_crimson_bush)-1)
+			checker = roll1;
 			var random_coll1 = instance_find(obj_crimson_bush,roll1)
 			if (random_coll1 != noone){
 			destinationX = random_coll1.x
@@ -147,13 +148,13 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 		else if (y > _yy+10)  // jump
 		{
 			var in_swim = instance_place( x, y, obj_swim)
+			var coll_see1 = collision_rectangle(x,bbox_top,x+(xspd*jump_range),bbox_bottom,obj_collision,false,true)
 			//check ground
-			if ((collision_rectangle(x,bbox_top,x+(xspd*jump_range),bbox_bottom,obj_collision,false,true) ||
+			if (((coll_see1 && coll_see1.mask_index == sprite_index) ||
 			(!collision_rectangle(x+xspd,bbox_bottom,x+(xspd*pit_check_range),bbox_bottom+pit_check_depth,obj_collision,false,true) )) 
 			
 			//check water
 			&& !in_swim) || (in_swim && TargetY < y)
-			
 			//Deciding to jump
 			{should_jump = 1;} else {should_jump = 0;}
 

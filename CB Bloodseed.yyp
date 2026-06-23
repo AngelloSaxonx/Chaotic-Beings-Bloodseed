@@ -97,7 +97,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"CB Bloodseed",
   "resources":[
@@ -115,6 +115,8 @@
     {"id":{"name":"obj_foreground_orange","path":"objects/obj_foreground_orange/obj_foreground_orange.yy",},},
     {"id":{"name":"obj_foreground_red","path":"objects/obj_foreground_red/obj_foreground_red.yy",},},
     {"id":{"name":"Obj_grid","path":"objects/Obj_grid/Obj_grid.yy",},},
+    {"id":{"name":"Obj_hitBox","path":"objects/Obj_hitBox/Obj_hitBox.yy",},},
+    {"id":{"name":"Obj_hurtbox","path":"objects/Obj_hurtbox/Obj_hurtbox.yy",},},
     {"id":{"name":"obj_nyixling","path":"objects/obj_nyixling/obj_nyixling.yy",},},
     {"id":{"name":"obj_stats","path":"objects/obj_stats/obj_stats.yy",},},
     {"id":{"name":"obj_swim","path":"objects/obj_swim/obj_swim.yy",},},
@@ -207,6 +209,7 @@
     {"id":{"name":"spr_warp","path":"sprites/spr_warp/spr_warp.yy",},},
     {"id":{"name":"Sprite40","path":"sprites/Sprite40/Sprite40.yy",},},
     {"id":{"name":"Sprite41","path":"sprites/Sprite41/Sprite41.yy",},},
+    {"id":{"name":"Sprite63","path":"sprites/Sprite63/Sprite63.yy",},},
     {"id":{"name":"ts_crimson_gorge_back","path":"tilesets/ts_crimson_gorge_back/ts_crimson_gorge_back.yy",},},
     {"id":{"name":"ts_crimson_gorge_front","path":"tilesets/ts_crimson_gorge_front/ts_crimson_gorge_front.yy",},},
     {"id":{"name":"ts_dungeon_back","path":"tilesets/ts_dungeon_back/ts_dungeon_back.yy",},},
@@ -217,6 +220,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_titlescreen","path":"rooms/rm_titlescreen/rm_titlescreen.yy",},},
+    {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"roomId":{"name":"rm_crimson_cliff_1","path":"rooms/rm_crimson_cliff_1/rm_crimson_cliff_1.yy",},},
     {"roomId":{"name":"rm_crimson","path":"rooms/rm_crimson/rm_crimson.yy",},},
     {"roomId":{"name":"rm_crimson_dung_1","path":"rooms/rm_crimson_dung_1/rm_crimson_dung_1.yy",},},
@@ -227,7 +231,6 @@
     {"roomId":{"name":"rm_crimson_training","path":"rooms/rm_crimson_training/rm_crimson_training.yy",},},
     {"roomId":{"name":"rm_crimson_station_1","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},},
     {"roomId":{"name":"rm_crimson_lake","path":"rooms/rm_crimson_lake/rm_crimson_lake.yy",},},
-    {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"roomId":{"name":"rm_crimson_2","path":"rooms/rm_crimson_2/rm_crimson_2.yy",},},
     {"roomId":{"name":"rm_crimson_arena_2","path":"rooms/rm_crimson_arena_2/rm_crimson_arena_2.yy",},},
     {"roomId":{"name":"rm_crimson_3","path":"rooms/rm_crimson_3/rm_crimson_3.yy",},},
