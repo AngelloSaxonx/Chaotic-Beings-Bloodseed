@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Color Theory",
-    "path":"folders/Sprites/Environement/Color Theory.yy",
+    "name":"Foregrounds",
+    "path":"folders/Sprites/Areas/Foregrounds.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Parallax",
-    "path":"folders/Sprites/Environement/Crimson Gorge/Parallax.yy",
+    "path":"folders/Sprites/Areas/Crimson Gorge/Parallax.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
