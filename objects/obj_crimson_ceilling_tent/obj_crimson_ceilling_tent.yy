@@ -8,8 +8,8 @@
   "name":"obj_crimson_ceilling_tent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Crimson Gorge",
-    "path":"folders/Objets/Decor/Crimson Gorge.yy",
+    "name":"Decors",
+    "path":"folders/Objets/Decors.yy",
   },
   "parentObjectId":{
     "name":"obj_collision",

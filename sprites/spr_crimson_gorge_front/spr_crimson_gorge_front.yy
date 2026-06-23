@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Tiles",
-    "path":"folders/Sprites/Areas/Crimson Gorge/Tiles.yy",
+    "name":"Tiles Decor",
+    "path":"folders/Sprites/Environement/Crimson Gorge/Tiles Decor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

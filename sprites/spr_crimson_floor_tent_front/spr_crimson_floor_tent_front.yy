@@ -45,7 +45,7 @@
   "origin":7,
   "parent":{
     "name":"Floor Tent",
-    "path":"folders/Sprites/Areas/Crimson Gorge/Structures/Floor Tent.yy",
+    "path":"folders/Sprites/Environement/Crimson Gorge/Structures Decor/Floor Tent.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

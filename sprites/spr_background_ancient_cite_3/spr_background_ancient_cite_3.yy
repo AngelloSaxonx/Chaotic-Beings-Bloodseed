@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"¨Parallax",
-    "path":"folders/Sprites/Areas/Ancient Cite/¨Parallax.yy",
+    "path":"folders/Sprites/Environement/Ancient Cite/¨Parallax.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
