@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_crimson_house_front",
+    "path":"sprites/spr_crimson_house_front/spr_crimson_house_front.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

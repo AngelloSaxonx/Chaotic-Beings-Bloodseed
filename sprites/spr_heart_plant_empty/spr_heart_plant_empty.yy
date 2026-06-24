@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Hearts",
-    "path":"folders/Sprites/Azure/Hearts.yy",
+    "path":"folders/Sprites/Stats/Hearts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

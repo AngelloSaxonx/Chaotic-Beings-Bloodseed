@@ -3,9 +3,8 @@ heart = 4;
 
 bloodline_max = 20;
 bloodline = 0;
-
 bloodline_meter_spr = spr_bloodline_meter;
-bloodline_round_spr = spr_bloodline_round_empty;
+
 
 heart_max_spr = spr_heart_plant_empty;
 heart_spr = spr_heart_plant;

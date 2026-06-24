@@ -105,8 +105,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Sprites/Dialogue.yy",
+    "name":"Textbox",
+    "path":"folders/Sprites/Textbox.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

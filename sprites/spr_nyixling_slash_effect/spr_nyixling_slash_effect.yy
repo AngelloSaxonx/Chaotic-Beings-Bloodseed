@@ -18,7 +18,7 @@
   ],
   "gridX":20,
   "gridY":20,
-  "height":40,
+  "height":20,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"2472d7b5-cf4e-4556-8ce7-ba6eb84d1299","blendMode":0,"displayName":"default","isLocked":false,"name":"2472d7b5-cf4e-4556-8ce7-ba6eb84d1299","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Nyixling",
-    "path":"folders/Sprites/Characters/Crimson Gorge/Enemies/Nyixling.yy",
+    "name":"Effect",
+    "path":"folders/Sprites/Characters/Crimson Gorge/Enemies/Nyixling/Effect.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -83,8 +83,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":20,
-    "yorigin":40,
+    "xorigin":10,
+    "yorigin":20,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -94,5 +94,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":40,
+  "width":20,
 }

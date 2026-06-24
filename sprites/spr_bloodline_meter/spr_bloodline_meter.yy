@@ -45,7 +45,7 @@
   "origin":0,
   "parent":{
     "name":"Bloodline",
-    "path":"folders/Sprites/Azure/Bloodline.yy",
+    "path":"folders/Sprites/Stats/Bloodline.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

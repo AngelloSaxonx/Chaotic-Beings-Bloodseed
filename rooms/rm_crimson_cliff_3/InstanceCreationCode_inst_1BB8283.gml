@@ -1,3 +1,3 @@
-target_x = 620;
+target_x = 300;
 target_y = 180;
-target_rm = rm_crimson_arena_3;
+target_rm = rm_crimson_save_2;

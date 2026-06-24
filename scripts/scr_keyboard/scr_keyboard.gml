@@ -32,7 +32,7 @@ function scr_get_control()
 	jump_key = keyboard_check(ord("Z")) + gamepad_button_check( 0, gp_face1);
 		jump_key = clamp( jump_key, 0, 1);
 		
-	attack_key = keyboard_check_pressed(vk_space)
+	attack_key = keyboard_check_pressed(ord("X"))
 		attack_key = clamp( attack_key, 0, 1);
 	
 	dash_key = keyboard_check_pressed(ord("C")) + gamepad_button_check_pressed( 0, gp_shoulderlb);

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite63",
-    "path":"sprites/Sprite63/Sprite63.yy",
+    "name":"spr_azure_stab_hitbox",
+    "path":"sprites/spr_azure_stab_hitbox/spr_azure_stab_hitbox.yy",
   },
   "spriteMaskId":null,
   "visible":true,

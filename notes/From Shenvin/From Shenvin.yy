@@ -3,8 +3,8 @@
   "%Name":"From Shenvin",
   "name":"From Shenvin",
   "parent":{
-    "name":"CB Bloodseed",
-    "path":"CB Bloodseed.yyp",
+    "name":"Remarques",
+    "path":"folders/Remarques.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

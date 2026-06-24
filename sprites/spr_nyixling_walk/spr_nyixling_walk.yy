@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Nyixling",
-    "path":"folders/Sprites/Characters/Crimson Gorge/Enemies/Nyixling.yy",
+    "name":"Movement",
+    "path":"folders/Sprites/Characters/Crimson Gorge/Enemies/Nyixling/Movement.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
