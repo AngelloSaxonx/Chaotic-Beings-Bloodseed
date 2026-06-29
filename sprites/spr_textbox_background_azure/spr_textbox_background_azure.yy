@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"Dialogue",
-    "path":"folders/Sprites/Characters/A!Main/Azure/Dialogue.yy",
+    "path":"folders/Sprites/Characters/Azure/Dialogue.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

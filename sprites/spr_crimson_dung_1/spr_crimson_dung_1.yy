@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Crimson Gorge",
-    "path":"folders/Sprites/Map/Crimson Gorge.yy",
+    "name":"Crimson Fields",
+    "path":"folders/Sprites/Map/Crimson Fields.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Crimson House",
-    "path":"folders/Sprites/Areas/Crimson Gorge/Structures/Crimson House.yy",
+    "path":"folders/Sprites/Areas/Crimson Fields/Decor/Crimson House.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

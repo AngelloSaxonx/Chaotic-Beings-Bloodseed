@@ -8,8 +8,8 @@
   "name":"obj_crimson_arena",
   "overriddenProperties":[],
   "parent":{
-    "name":"Crimson Gorge",
-    "path":"folders/Objets/Crimson Gorge.yy",
+    "name":"Crimson Fields",
+    "path":"folders/Objets/Crimson Fields.yy",
   },
   "parentObjectId":{
     "name":"obj_collision",

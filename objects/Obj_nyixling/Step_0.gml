@@ -26,7 +26,7 @@ else
 			var random_coll = instance_find(obj_collision,roll)
 			if (random_coll != noone){
 			destinationX = random_range(random_coll.bbox_left+10,random_coll.bbox_right-10)
-			var unqiue_wall = instance_exists(obj_crimson_ceilling_tent)
+			var unqiue_wall = instance_exists(obj_crimson_tent_2)
 			if (random_coll != unqiue_wall) {destinationY = random_coll.YPoint+10} else {destinationY = random_coll.bbox_top}
 			}
 			if mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true)

@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"Nyixwing",
-    "path":"folders/Sprites/Characters/Crimson Gorge/Enemies/Nyixwing.yy",
+    "path":"folders/Sprites/Characters/Crimson Fields/Enemies/Nyixwing.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

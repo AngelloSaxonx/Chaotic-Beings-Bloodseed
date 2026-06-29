@@ -1,17 +1,24 @@
 //create
-heart_max = 4;
-heart = 4;
+hp_max = 4;
+hp = 4;
+hp_max_spr = spr_heart_plant_empty;
+hp_spr = spr_heart_plant;
 
-bloodline_max = 20;
-bloodline = 0;
-bloodline_meter_spr = spr_bloodline_meter;
+en_max = 20;
+en = 0;
+en_spr = spr_energy_meter;
+en_full = false;
 
-heart_max_spr = spr_heart_plant_empty;
-heart_spr = spr_heart_plant;
+char = "Azure";
+switch(char)
+{
+	case("Azure"):
+	char_spr = spr_icon_azure;
+	break;
+}
 
-bloodline_full = true;
 space = 20;
 Xoffset = 2
 Yoffset = 12
-//heart_lenght = array_create(heart_max,heart)
-//bloodline_lenght = array_create(bloodline_max,bloodline)
+//hp_lenght = array_create(hp_max,hp)
+//en_lenght = array_create(en_max,en)

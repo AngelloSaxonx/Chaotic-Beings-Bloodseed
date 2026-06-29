@@ -15,7 +15,6 @@
     {"name":"inst_6C6F48B2","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},
     {"name":"inst_11ECD2F9","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},
     {"name":"inst_66C530D0","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},
-    {"name":"inst_D3A76F0","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},
     {"name":"inst_3CA5291A","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},
     {"name":"inst_356A92A9","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},
     {"name":"inst_34CBF663","path":"rooms/rm_crimson_station_1/rm_crimson_station_1.yy",},
@@ -25,7 +24,6 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"obj_main","depth":-200,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_D3A76F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D3A76F0","objectId":{"name":"obj_foreground_red","path":"objects/obj_foreground_red/obj_foreground_red.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_34CBF663","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34CBF663","objectId":{"name":"obj_crimson_bush","path":"objects/obj_crimson_bush/obj_crimson_bush.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":600.0,"y":140.0,},
         {"$GMRInstance":"v4","%Name":"inst_3124A6BB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3124A6BB","objectId":{"name":"obj_crimson_bush","path":"objects/obj_crimson_bush/obj_crimson_bush.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":540.0,"y":140.0,},
         {"$GMRInstance":"v4","%Name":"inst_3CA5291A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3CA5291A","objectId":{"name":"obj_warp","path":"objects/obj_warp/obj_warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":640.0,"y":80.0,},
@@ -60,7 +58,7 @@
     {"$GMRTileLayer":"","%Name":"Tiles_4","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_4","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":32,"TileCompressedData":[
           -17,-2147483648,-3,0,-6,7,1,8,-22,-2147483648,-5,0,-27,-2147483648,-5,0,-28,-2147483648,-4,0,-28,-2147483648,
           -2,0,-2,-2147483648,-2,0,-4,-2147483648,-4,0,-28,-2147483648,-4,0,-28,-2147483648,-4,0,-160,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_gorge_front","path":"tilesets/ts_crimson_gorge_front/ts_crimson_gorge_front.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_fields_front","path":"tilesets/ts_crimson_fields_front/ts_crimson_fields_front.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":32,"TileCompressedData":[
           -16,-2147483648,2,20,36,-6,0,3,46,4,12,-3,1,2,12,1,-16,-2147483648,2,20,36,-6,0,2,46,27,-3,28,3,4,1,
           1,-16,-2147483648,3,20,36,0,-5,-2147483648,1,49,-3,37,4,39,18,1,12,-16,-2147483648,3,20,36,0,-9,-2147483648,
@@ -68,20 +66,20 @@
           1,40,-8,45,1,0,-23,-2147483648,1,9,-7,10,-4,0,-20,-2147483648,1,18,-3,1,4,12,43,44,12,-18,-2147483648,
           -6,0,2,18,12,-3,1,3,52,53,1,-18,-2147483648,-6,0,1,18,-3,1,1,12,-3,1,-18,-2147483648,-5,0,4,3,2,1,12,
           -3,1,2,12,1,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_gorge_front","path":"tilesets/ts_crimson_gorge_front/ts_crimson_gorge_front.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_fields_front","path":"tilesets/ts_crimson_fields_front/ts_crimson_fields_front.yy",},"userdefinedDepth":true,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_5","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_5","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":32,"TileCompressedData":[
           -18,-2147483648,-7,0,-24,-2147483648,4,536870961,0,0,536870961,-3,-2147483648,1,0,-24,-2147483648,6,
           40,536870961,0,40,536870961,0,-4,-2147483648,2,37,18,-20,-2147483648,-2,40,4,536870961,40,536870952,
           536870961,-4,-2147483648,2,37,18,-29,-2147483648,6,16,48,18,13,22,30,-26,-2147483648,3,37,9,1,-3,12,
           -26,-2147483648,6,37,18,21,12,30,12,-160,-2147483648,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_gorge_back","path":"tilesets/ts_crimson_gorge_back/ts_crimson_gorge_back.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_crimson_fields_back","path":"tilesets/ts_crimson_fields_back/ts_crimson_fields_back.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":20,"gridY":20,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rm_crimson_station_1",
   "parent":{
-    "name":"Crimson Gorge",
-    "path":"folders/Pièces/Crimson Gorge.yy",
+    "name":"Crimson Fields",
+    "path":"folders/Pièces/Crimson Fields.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

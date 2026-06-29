@@ -26,7 +26,7 @@
   "origin":7,
   "parent":{
     "name":"Decor",
-    "path":"folders/Sprites/Areas/Crimson Gorge/Decor.yy",
+    "path":"folders/Sprites/Areas/Crimson Fields/Decor.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

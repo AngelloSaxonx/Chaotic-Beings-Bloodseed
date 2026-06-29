@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Background",
-    "path":"folders/Sprites/Areas/Crimson Gorge/Background.yy",
+    "path":"folders/Sprites/Areas/Crimson Fields/Background.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

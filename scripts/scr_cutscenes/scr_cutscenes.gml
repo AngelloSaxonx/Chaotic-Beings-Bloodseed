@@ -9,4 +9,22 @@ global.cutscenes[$ "test"] =
 	new scr_text("Azure right testing")
 ]
 
+global.cutscenes[$ "door"] = 
+[
+	new scr_text("It's a locked door.")
+]
 
+global.cutscenes[$ "teapot"] = 
+[
+	new scr_text("Teapots..."),
+	new scr_text("Meant for two lovers.")
+]
+
+global.cutscenes[$ "rouge pastry"] = 
+[
+	new scr_text("A pink pastry stands in front of you."),
+	new scr_text("You see bouquet of various red flowers"),
+	new scr_text("Trought the windows, you see various pastries and relics."),
+	new scr_text("And bags of various fruits"),
+	new scr_text("Will you enter the shop?")
+]

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Hearts",
-    "path":"folders/Sprites/Stats/Hearts.yy",
+    "name":"HP",
+    "path":"folders/Sprites/Battle/HP.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

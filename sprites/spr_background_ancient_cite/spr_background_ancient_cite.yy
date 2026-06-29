@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Parallax",
-    "path":"folders/Sprites/Areas/Ancient Cite/Parallax.yy",
+    "name":"Background",
+    "path":"folders/Sprites/Areas/Ancient Cite/Background.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

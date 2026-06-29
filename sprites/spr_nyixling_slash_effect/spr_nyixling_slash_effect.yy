@@ -28,7 +28,7 @@
   "origin":7,
   "parent":{
     "name":"Effect",
-    "path":"folders/Sprites/Characters/Crimson Gorge/Enemies/Nyixling/Effect.yy",
+    "path":"folders/Sprites/Characters/Crimson Fields/Enemies/Nyixling/Effect.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

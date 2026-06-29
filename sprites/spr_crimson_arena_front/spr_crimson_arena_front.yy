@@ -45,7 +45,7 @@
   "origin":7,
   "parent":{
     "name":"Arena",
-    "path":"folders/Sprites/Areas/Crimson Gorge/Structures/Arena.yy",
+    "path":"folders/Sprites/Areas/Crimson Fields/Decor/Arena.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -34,7 +34,7 @@
   "origin":7,
   "parent":{
     "name":"Movement",
-    "path":"folders/Sprites/Characters/A!Main/Azure/Movement.yy",
+    "path":"folders/Sprites/Characters/Azure/Movement.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

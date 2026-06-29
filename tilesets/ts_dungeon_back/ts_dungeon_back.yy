@@ -12,14 +12,14 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Tile sets",
-    "path":"folders/Tile sets.yy",
+    "name":"Lost Dungeon",
+    "path":"folders/Tile sets/Lost Dungeon.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_dungeon_back",
-    "path":"sprites/spr_dungeon_back/spr_dungeon_back.yy",
+    "name":"spr_dung_back",
+    "path":"sprites/spr_dung_back/spr_dung_back.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

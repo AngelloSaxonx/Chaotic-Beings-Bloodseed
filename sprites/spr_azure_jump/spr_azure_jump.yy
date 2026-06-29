@@ -48,7 +48,7 @@
   "origin":7,
   "parent":{
     "name":"Movement",
-    "path":"folders/Sprites/Characters/A!Main/Azure/Movement.yy",
+    "path":"folders/Sprites/Characters/Azure/Movement.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -81,7 +81,7 @@
     },
     "name":"spr_azure_jump",
     "playback":1,
-    "playbackSpeed":7.0,
+    "playbackSpeed":10.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

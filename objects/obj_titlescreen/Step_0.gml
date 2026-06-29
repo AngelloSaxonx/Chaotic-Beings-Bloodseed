@@ -8,7 +8,7 @@ if accept_key
 	switch(pos)
 	{
 		case(0):
-		room_goto(rm_crimson_cliff_1);
+		room_goto(rm_weird_fields_1);
 		
 		break;
 		

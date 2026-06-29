@@ -45,7 +45,7 @@
   "origin":7,
   "parent":{
     "name":"Effects",
-    "path":"folders/Sprites/Characters/A!Main/Azure/Effects.yy",
+    "path":"folders/Sprites/Characters/Azure/Effects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

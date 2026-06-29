@@ -1,9 +1,9 @@
 //step
-if (heart > heart_max) || (heart < 0)
+if (hp > hp_max) || (hp < 0)
 {
-	heart = heart_max
+	hp = hp_max
 }
 if keyboard_check_pressed(ord("P"))
 {
-	heart--;
+	hp--;
 }

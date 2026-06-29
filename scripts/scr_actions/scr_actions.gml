@@ -40,3 +40,11 @@ function scr_speaker(_name, _sprite = undefined, _portrait = undefined, _backgro
 		_textbox.next();
 	}
 }
+
+function scr_transition(_target_x, _target_y, _target_rm) : scr_actions() constructor
+{
+	var _transition = instance_create_depth(0,0,-9999,obj_transition)
+	_transition.target_rm = _target_rm;
+	_transition.target_x = _target_x;
+	_transition.target_y = _target_y;
+}

@@ -35,7 +35,7 @@
   "origin":7,
   "parent":{
     "name":"Movement",
-    "path":"folders/Sprites/Characters/Crimson Gorge/Enemies/Nyixling/Movement.yy",
+    "path":"folders/Sprites/Characters/Crimson Fields/Enemies/Nyixling/Movement.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
