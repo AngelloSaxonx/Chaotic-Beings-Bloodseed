@@ -1,4 +1,21 @@
 //Syncing
+if (mergable == 1)
+{
+	var merging = collision_rectangle(bbox_right+1,bbox_top,bbox_right+20,bbox_bottom,obj_collision,true,true)
+	if (merging != noone)
+	{
+		decor_xscale += merging.decor_xscale;
+		instance_destroy(merging)
+	}
+	image_xscale = decor_xscale
+	LPoint = bbox_left+10
+	RPoint = bbox_right-10
+
+	yvalue = bbox_top-10
+	yvalue2 = yvalue
+	with (Obj_grid){mp_grid_add_instances(cell,obj_collision,true)}
+	mergable = 0;
+}
 
 with (obj_collision)
 {

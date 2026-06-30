@@ -11,10 +11,7 @@
     "name":"Crimson Fields",
     "path":"folders/Objets/Crimson Fields.yy",
   },
-  "parentObjectId":{
-    "name":"obj_collision",
-    "path":"objects/obj_collision/obj_collision.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -37,5 +34,5 @@
     "path":"sprites/spr_crimson_house_front/spr_crimson_house_front.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

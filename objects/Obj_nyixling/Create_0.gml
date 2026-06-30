@@ -28,4 +28,4 @@ can_jump = 1
 state = "Wandering"
 sub_state = "Scouting"
 
-checker = 0;
+invaild_pathing = false;

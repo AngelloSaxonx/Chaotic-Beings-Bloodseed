@@ -15,7 +15,7 @@ if (timer_rescout > 0)
 }
 else
 {
-	sub_state = "Gathering"//choose("Scouting","Scouting","Gathering")
+	sub_state = "Scouting"//choose("Scouting","Scouting","Gathering")
 	
 	switch (sub_state)
 	{
@@ -25,9 +25,9 @@ else
 			var roll = irandom(instance_number(obj_collision)-1)
 			var random_coll = instance_find(obj_collision,roll)
 			if (random_coll != noone){
-			destinationX = random_range(random_coll.bbox_left+10,random_coll.bbox_right-10)
-			var unqiue_wall = instance_exists(obj_crimson_tent_2)
-			if (random_coll != unqiue_wall) {destinationY = random_coll.YPoint+10} else {destinationY = random_coll.bbox_top}
+			destinationX = random_range(random_coll.LPoint,random_coll.RPoint)
+			random_coll.YPoint = choose(random_coll.yvalue,random_coll.yvalue2)
+			destinationY = random_coll.YPoint
 			}
 			if mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true)
 			{
@@ -64,9 +64,8 @@ break;
 }
 
 // Decetion
-var coll_see = collision_line(x,y-1,Target.x,Target.y-1,obj_collision,false,true)
-if collision_circle(x,y,detect_range,Target,false,true) && 
-((!coll_see) || (coll_see.mask_index != sprite_index && (coll_see.bbox_top <= y-1 && coll_see.bbox_bottom >= y-1)))
+var coll_see = collision_line(x,y-1,Target.x,Target.y-1,obj_collision,true,true)
+if collision_circle(x,y,detect_range,Target,false,true) && (!coll_see)
 {
 	state = "Chasing";
 }
@@ -86,7 +85,7 @@ else
 var list = ds_list_create()
 var nearesty = noone
 var dist = 9999999;
-var coll = collision_rectangle_list(bbox_left,y,bbox_right,room_height,obj_collision,false,true,list,true)
+var coll = collision_rectangle_list(bbox_left,y,bbox_right,room_height,obj_collision,true,true,list,true)
 if (coll > 0)
 {
 	for (var d = 0; d < coll; d++) {
@@ -123,7 +122,7 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 	(!collision_rectangle(x+xspd,
 	bbox_bottom,x+(xspd*pit_check_range),
 	bbox_bottom+pit_check_depth,
-	obj_collision,false,true))
+	obj_collision,true,true))
 	{fall_down_value = 2}
 	
 	var _xx = path_get_point_x(path,fall_down_value)
@@ -139,7 +138,7 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 		{xspd = 0}
 		if (y < _yy-10)    // fall
 		{
-			var coll2 = collision_rectangle(x,bbox_bottom,x+min((xspd*fall_range)*spd,TargetX-x),bbox_bottom+min(fall_range*spd,(TargetY-1+pit_check_depth)-y),obj_collision,false,true)
+			var coll2 = collision_rectangle(x,bbox_bottom,x+min((xspd*fall_range)*spd,TargetX-x),bbox_bottom+min(fall_range*spd,(TargetY-1+pit_check_depth)-y),obj_collision,true,true)
 			var coll3 = instance_place(x,y+5,obj_collision)
 			if (coll2 != noone && coll3 != noone && coll2.id != coll3.id) 
 			//&& (!collision_rectangle(x+xspd,bbox_bottom,x+(xspd*pit_check_range),bbox_bottom+pit_check_depth,obj_collision,false,true))
@@ -148,10 +147,10 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 		else if (y > _yy+10)  // jump
 		{
 			var in_swim = instance_place( x, y, obj_swim)
-			var coll_see1 = collision_rectangle(x,bbox_top,x+(xspd*jump_range),bbox_bottom,obj_collision,false,true)
+			var coll_see1 = collision_rectangle(x,bbox_top,x+(xspd*jump_range),bbox_bottom,obj_collision,true,true)
 			//check ground
 			if (((coll_see1 && coll_see1.mask_index == sprite_index) ||
-			(!collision_rectangle(x+xspd,bbox_bottom,x+(xspd*pit_check_range),bbox_bottom+pit_check_depth,obj_collision,false,true) )) 
+			(!collision_rectangle(x+xspd,bbox_bottom,x+(xspd*pit_check_range),bbox_bottom+pit_check_depth,obj_collision,true,true) )) 
 			
 			//check water
 			&& !in_swim) || (in_swim && TargetY < y)
@@ -164,8 +163,8 @@ if (mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true))
 		{
 			//check ground
 			var check_water = collision_rectangle(bbox_left,y,bbox_right,y_ground,obj_swim,false,true)
-			if ((xspd == 1 && (!collision_rectangle(x,bbox_bottom,x+pit_check_range,bbox_bottom+pit_check_depth,obj_collision,false,true) ))
-			|| (xspd == -1 && (!collision_rectangle(x-pit_check_range,bbox_bottom,x,bbox_bottom+pit_check_depth,obj_collision,false,true) )))
+			if ((xspd == 1 && (!collision_rectangle(x,bbox_bottom,x+pit_check_range,bbox_bottom+pit_check_depth,obj_collision,true,true) ))
+			|| (xspd == -1 && (!collision_rectangle(x-pit_check_range,bbox_bottom,x,bbox_bottom+pit_check_depth,obj_collision,true,true) )))
 			
 			//check water
 			&& ((!check_water && TargetY-1 <= y_ground)
@@ -210,6 +209,7 @@ else
 		{
 			if (inst.nearest != noone) && (inst.RPoint - inst.nearest.LPoint < jump_range)
 			{
+				inst.nearest.YPoint = clamp(TargetY,inst.nearest.yvalue,inst.nearest.yvalue2)
 				TargetX = inst.nearest.LPoint
 				TargetY = inst.nearest.YPoint
 			}
@@ -319,7 +319,7 @@ x += xspd*spd
 y += yspd
 #endregion
 
-depth = 300;
+depth = -300;
 
 if (bbox_top > room_height)
 {

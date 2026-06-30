@@ -1,11 +1,3 @@
-// Inherit the parent event
-event_inherited();
-LPoint = bbox_left+10
-RPoint = bbox_right-10
-
-YPoint = bbox_bottom-40
-grabableTop = bbox_top + 40
-grabableBot = bbox_bottom - 20
 var _layer = layer_get_id_at_depth(-999)[0];
 if(_layer == -1) _layer[0] = layer_create(-900);
 if(_layer != -1) _layer[1] = layer_create(360);
@@ -15,5 +7,15 @@ layer_sprite_create(_layer[1], x, y, spr_crimson_house_back);
 
 // if noone, then make new, else just overwrite the array with the top layer
 if(layer[0] == -1) layer = layer_create(-9999) else layer = layer[0];
-
 mask_index = spr_crimson_house_collision
+
+for (var i = 0; i < sprite_width/20; ++i) {
+	for (var j = 0; j < sprite_height/20; ++j) {
+		var coll = instance_create_depth(bbox_left+(i*20),bbox_top+(j*20),depth-1,obj_collision)
+		coll.mergable = 1;
+		if !instance_place(x,y,coll)
+		{
+			instance_destroy(coll)
+		}
+	}
+}
