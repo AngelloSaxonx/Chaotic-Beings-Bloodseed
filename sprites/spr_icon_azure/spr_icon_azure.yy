@@ -24,7 +24,7 @@
   ],
   "name":"spr_icon_azure",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"Character",
     "path":"folders/Sprites/Battle/Character.yy",
@@ -82,7 +82,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":10,
-    "yorigin":20,
+    "yorigin":10,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
