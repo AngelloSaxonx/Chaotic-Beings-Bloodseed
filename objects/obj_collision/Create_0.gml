@@ -1,14 +1,9 @@
 LPoint = bbox_left+10
 RPoint = bbox_right-10
 
-yvalue = bbox_top-10
-yvalue2 = yvalue
+YPoint = bbox_top-10
 
-YPoint = choose(yvalue,yvalue2)
-//yvalue3 =
-
-grabableTop = bbox_top
-grabableBot = bbox_top
+grabableTop = YPoint+10
 
 nearest = noone;
 dist = 999999;

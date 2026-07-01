@@ -11,8 +11,7 @@ if (mergable == 1)
 	LPoint = bbox_left+10
 	RPoint = bbox_right-10
 
-	yvalue = bbox_top-10
-	yvalue2 = yvalue
+	YPoint = bbox_top-10
 	with (Obj_grid){mp_grid_add_instances(cell,obj_collision,true)}
 	mergable = 0;
 }
@@ -26,7 +25,7 @@ with (obj_collision)
 	    var dis = point_distance(other.RPoint, other.YPoint, LPoint, YPoint);
 
 	    // must be close enough
-	    if (dis <= other.max_dist) && (other.YPoint >= YPoint)
+	    if (dis <= other.max_dist) //&& (other.YPoint >= YPoint)
 	    {
 	        // nearest valid wall
 	        if (dis < other.dist)
@@ -39,7 +38,7 @@ with (obj_collision)
 		var dis2 = point_distance(other.LPoint, other.YPoint, RPoint, YPoint);
 
 	    // must be close enough
-	    if (dis2 <= other.max_dist) && (other.YPoint >= YPoint)
+	    if (dis2 <= other.max_dist) //&& (other.YPoint >= YPoint)
 	    {
 	        // nearest valid wall
 	        if (dis2 < other.dist2)

@@ -9,13 +9,35 @@ if(layer[0] == -1) layer = layer_create(-9999) else layer = layer[0];
 
 
 var coll = instance_create_depth(x,y,depth-1,obj_collision)
-coll.sprite_index = spr_crimson_arena_collision
-coll.mask_index = spr_crimson_arena_collision
-coll.LPoint = bbox_left+10
-coll.RPoint = bbox_right-10
+with (coll)
+{
+sprite_index = spr_crimson_arena_collision
+unique_mask = sprite_duplicate(sprite_index);
 
-coll.yvalue = bbox_top+40-10
-coll.yvalue2 = bbox_bottom-(40-10)
+var _left = 0;
+var _top = 0;
+var _right = 319;
+var _bottom = 59;
 
-coll.grabableTop = coll.yvalue+10
-coll.grabableBot = coll.yvalue2+30
+sprite_collision_mask(unique_mask, false, bboxmode_manual, _left, _top, _right, _bottom, bboxkind_precise, 0);
+
+mask_index = unique_mask;
+LPoint = bbox_left+10
+RPoint = bbox_right-10
+YPoint = (bbox_top+40)-10
+grabableTop = YPoint+10
+}
+
+var coll2 = instance_create_depth(x,y,depth-1,obj_collision)
+with (coll2)
+{
+sprite_index = spr_crimson_arena_collision
+unique_mask = sprite_duplicate(sprite_index);
+
+var _left = 0;
+var _top = 200;
+var _right = 319;
+var _bottom = 239;
+
+sprite_collision_mask(unique_mask, false, bboxmode_manual, _left, _top, _right, _bottom, bboxkind_precise, 0);
+}

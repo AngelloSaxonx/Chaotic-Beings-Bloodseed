@@ -26,7 +26,6 @@ else
 			var random_coll = instance_find(obj_collision,roll)
 			if (random_coll != noone){
 			destinationX = random_range(random_coll.LPoint,random_coll.RPoint)
-			random_coll.YPoint = choose(random_coll.yvalue,random_coll.yvalue2)
 			destinationY = random_coll.YPoint
 			}
 			if mp_grid_path(Obj_grid.cell,path,x,y,TargetX,TargetY-1,true)
@@ -209,7 +208,6 @@ else
 		{
 			if (inst.nearest != noone) && (inst.RPoint - inst.nearest.LPoint < jump_range)
 			{
-				inst.nearest.YPoint = clamp(TargetY,inst.nearest.yvalue,inst.nearest.yvalue2)
 				TargetX = inst.nearest.LPoint
 				TargetY = inst.nearest.YPoint
 			}

@@ -116,9 +116,8 @@ scr_state_idle = function()
     scr_movement();
 	
 	var coll = instance_place(x+(face*move_spd[0]),y,obj_collision)
-	if ( (coll && ((coll.grabableBot == coll.grabableTop && coll.grabableBot > bbox_top && !instance_place(coll.x,coll.y-1,obj_collision))
-	|| (coll.grabableBot != coll.grabableTop && (coll.grabableBot > bbox_top && coll.grabableTop < bbox_top))))
-	&& !(instance_place(x,y+1+yspd,obj_collision)))
+	if ( (coll && (coll.grabableTop > bbox_top && !instance_place(coll.x,coll.y-1,obj_collision))))
+	&& !(instance_place(x,y+1+yspd,obj_collision))
 	{
 		state = scr_wall_recovery
 		xspd = 0;
