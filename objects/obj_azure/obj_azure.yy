@@ -11,8 +11,8 @@
   "name":"obj_azure",
   "overriddenProperties":[],
   "parent":{
-    "name":"Azure",
-    "path":"folders/Objets/PC/Azure.yy",
+    "name":"Party",
+    "path":"folders/Objets/Party.yy",
   },
   "parentObjectId":{
     "name":"Obj_hurtbox",
