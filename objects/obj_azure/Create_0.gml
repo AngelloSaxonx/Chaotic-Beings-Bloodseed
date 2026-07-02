@@ -11,8 +11,12 @@ ledge_spr = spr_azure_ledge
 jump_spr = spr_azure_jump;
 dash_air_spr = spr_azure_airdash;
 swim_spr = spr_azure_swim;
-attack_spr = spr_azure_stab
+attack_spr[0] = spr_azure_stab_final
+attack_spr[1] = spr_azure_stab_Body
+attack_spr[2] = spr_azure_stab_knife
+attack_spr[3] = spr_azure_stab_LeftArm
 image_moving = 0;
+condition_frame = 0
 
 face = 1;
 
@@ -85,7 +89,10 @@ scr_state_idle = function()
 				dash_energy = dash_time
 			}
         }
-        
+		if place_meeting(x+xspd,y,obj_collision)
+		{
+			dash_energy = 0;
+		}
     state = scr_state_dash;
     }
     //Attack
@@ -123,9 +130,9 @@ if on_ground
     {
 		if (from != noone)
 		{
-			if sprite_index != attack_spr
+			if sprite_index != attack_spr[0]
 	        {image_index = 0}
-			sprite_index = attack_spr
+			sprite_index = attack_spr[0]
 		}
 		else
 		{
@@ -139,7 +146,7 @@ if on_ground
 	{
 //<<<<<<< Updated upstream
 			
-		if sprite_index != run_spr
+		if sprite_index != run_spr{
 //=======
 		//Dash
 		if (dash_energy > 0){
@@ -152,6 +159,7 @@ if on_ground
 		if sprite_index != run_spr
 	    {image_index = 0}
 		sprite_index = run_spr;
+		}
 		}
 	}
 	//Walk
@@ -191,7 +199,11 @@ else //if (!on_ground) || (jump_key)
 };
 
 scr_state_dash = function()
-    {
+{
+	if place_meeting(x+xspd,y,obj_collision)
+	{
+		dash_energy = 0;
+	}
     if (dash_energy-- <= 0 || xspd == 0)
     {
         state = scr_state_idle;

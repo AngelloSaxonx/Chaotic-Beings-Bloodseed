@@ -1,2 +1,2 @@
-alarm[0] = 24
-depth = -9999
+alarm[0] = 22
+//depth = -9999
