@@ -11,6 +11,8 @@ ledge_spr = spr_azure_ledge
 jump_spr = spr_azure_jump;
 dash_air_spr = spr_azure_airdash;
 swim_spr = spr_azure_swim;
+attack_spr = spr_azure_stab
+image_moving = 0;
 
 face = 1;
 
@@ -88,18 +90,7 @@ scr_state_idle = function()
     }
     //Attack
 	#region
-	var AtkX = x+(image_xscale*face)
-	var AtkY = bbox_top
-	if (attack_key) && (from == noone)
-	{
-		var atk = instance_create_depth(AtkX,AtkY,depth,Obj_hitBox)
-		from = atk.id
-	}
-	if (from != noone) {
-		if instance_exists(from) {from.x = AtkX+xspd; from.y = AtkY+yspd}
-		else {from = noone}
-	};
-	
+	Attack_stage_for_player()
 	#endregion
 	
     if yspd >= 0 && !place_meeting(x + xspd, y + 1, obj_collision)
@@ -126,14 +117,26 @@ scr_state_idle = function()
 
 if on_ground
     //Idle
-{image_speed = 1
+{
+	image_speed = 1
 	if abs(xspd) == 0 
-    {if sprite_index != idle_spr
-        {image_index = 0}
-    sprite_index = idle_spr}
-//Run & Dash
-else if abs(xspd) >= move_spd[1] 
     {
+		if (from != noone)
+		{
+			if sprite_index != attack_spr
+	        {image_index = 0}
+			sprite_index = attack_spr
+		}
+		else
+		{
+			if sprite_index != idle_spr
+	        {image_index = 0}
+			sprite_index = idle_spr
+		}
+	}
+	//Run & Dash
+	else if abs(xspd) >= move_spd[1] 
+	{
 //<<<<<<< Updated upstream
 			
 		if sprite_index != run_spr
@@ -142,20 +145,22 @@ else if abs(xspd) >= move_spd[1]
 		if (dash_energy > 0){
 		if sprite_index != dash_air_spr
 //>>>>>>> Stashed changes
-        {image_index = 0}
+	    {image_index = 0}
 		sprite_index = dash_air_spr;
 		}//Run
 		else{
 		if sprite_index != run_spr
-        {image_index = 0}
+	    {image_index = 0}
 		sprite_index = run_spr;
 		}
 	}
-//Walk
-else 
-    {if sprite_index != walk_spr
-        {image_index = 0}
-    sprite_index = walk_spr};
+	//Walk
+	else 
+	{
+		if sprite_index != walk_spr
+	    {image_index = 0}
+		sprite_index = walk_spr
+	};
 }
 //Jump
 else //if (!on_ground) || (jump_key)

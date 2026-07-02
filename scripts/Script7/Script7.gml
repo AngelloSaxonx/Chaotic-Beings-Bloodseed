@@ -1,11 +1,20 @@
-function path_invalid(Obj){
-
-if (Obj.sprite_index == spr_crimson_arena_collision &&
-point_in_rectangle(destinationX,destinationY,Obj.bbox_left+40,Obj.bbox_top+20,Obj.bbox_left+120,Obj.bbox_top+40))
-
-
-{
-	invaild_pathing = true
-}
-
+function Attack_stage_for_player(){
+	if (state != scr_state_dash) && (state != scr_wall_recovery)
+	{
+		var AtkX = x+(image_xscale*face)
+		var AtkY = bbox_bottom-10
+	
+	
+		if (attack_key) && (from == noone)
+		{
+			var atk = instance_create_depth(AtkX,AtkY,depth,Obj_hitBox)
+			atk.image_xscale = face
+			from = atk.id
+		}
+	
+		if (from != noone) {
+			if instance_exists(from) {from.x = AtkX+xspd; from.y = AtkY+yspd; from.image_xscale = face}
+			else {from = noone}
+		};
+	}
 }
